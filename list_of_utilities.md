@@ -25,8 +25,8 @@
 
 **md viewer**
 
-	grip
+	grip : visualises .md files
 
 **Search engines**
 
-	surfraw
+	surfraw : provides a fast UNIX command line interface to a variety of popular WWW search engines.
