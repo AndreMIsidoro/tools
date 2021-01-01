@@ -2,15 +2,27 @@
 
 ## Information Gathering
 
-nmap
-searchsplot
+	nmap
+	searchsplot
 
 
 ## Execute Exploits
 
-metasploit
+	metasploit
 
 ## Debugging and Reverse Engineering
 
 	ghidra : ELF files
 	immunity debugger : .exe files
+
+
+## Console Commands
+
+**Web Browsers on Terminal**
+
+	lynx
+	w3m
+
+**md viewer**
+
+	grip
