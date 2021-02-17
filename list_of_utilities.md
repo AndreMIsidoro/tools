@@ -14,6 +14,7 @@
 
 	ghidra : ELF files
 	immunity debugger : .exe files
+	uncompyle6 : Python cross-version byte-code decompiler
 
 
 ## Console Commands
