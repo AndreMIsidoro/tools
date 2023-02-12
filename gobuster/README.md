@@ -1,6 +1,6 @@
-#gobuster
+# gobuster
 
-##Overview
+## Overview
 
 Gobuster is a tool used to brute-force:
 
@@ -12,7 +12,7 @@ Gobuster is a tool used to brute-force:
 	TFTP servers
 
 
-##Installation
+## Installation
 
 First, you need to make sure you have Go installed on your Linux distribution, which is the programming
 language used to write the gobuster tool.
@@ -31,7 +31,7 @@ In case this fails, you can always compile the tool from its' source code by run
 	go get && go build
 	go install
 
-##Command Options
+## Command Options
 
 	dir : specify we are using the directory busting mode of the tool
 		-w : specify a wordlist, a collection of common directory names that are typically used for sites
