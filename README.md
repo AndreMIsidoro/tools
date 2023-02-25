@@ -4,7 +4,7 @@
 
 	nmap
 	searchsplot
-	gobuster : URIs (directories and files) in web sites, etc.
+	gobuster : Used to find URIs (directories and files) in web sites, etc.
 
 ## Execute Exploits
 
