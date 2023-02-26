@@ -37,3 +37,4 @@ In case this fails, you can always compile the tool from its' source code by run
 		-w : specify a wordlist, a collection of common directory names that are typically used for sites
 		-u : specify the target's IP address
 		-x : File extensions to search for
+		-o : specify output file (still prints to the stdoutput)
