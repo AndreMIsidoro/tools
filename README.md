@@ -19,6 +19,7 @@
 ## Vulnerabilities Exploiter
 
 	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
+	JohnTheRipper: is a fast password cracker
 
 
 ## Console Commands
