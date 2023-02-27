@@ -16,6 +16,10 @@
 	immunity debugger : .exe files
 	uncompyle6 : Python cross-version byte-code decompiler
 
+## Vulnerabilities Exploiter
+
+	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
+
 
 ## Console Commands
 
