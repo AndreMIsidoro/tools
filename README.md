@@ -20,6 +20,7 @@
 
 	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 	JohnTheRipper: is a fast password cracker
+	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
 
 
 ## Console Commands
