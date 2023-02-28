@@ -36,5 +36,5 @@ In case this fails, you can always compile the tool from its' source code by run
 	dir : specify we are using the directory busting mode of the tool
 		-w : specify a wordlist, a collection of common directory names that are typically used for sites
 		-u : specify the target's IP address
-		-x : File extensions to search for
+		-x : File extensions to search for. (If you dont speficify the file extension, gobuster will only look for directories)
 		-o : specify output file (still prints to the stdoutput)
