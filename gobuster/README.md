@@ -11,6 +11,8 @@ Gobuster is a tool used to brute-force:
 	Open Google Cloud buckets
 	TFTP servers
 
+	https://github.com/OJ/gobuster
+
 
 ## Installation
 
@@ -38,3 +40,5 @@ In case this fails, you can always compile the tool from its' source code by run
 		-u : specify the target's IP address
 		-x : File extensions to search for. (If you dont speficify the file extension, gobuster will only look for directories)
 		-o : specify output file (still prints to the stdoutput)
+
+	vhost : virtual host brute-forcing mode (not the same as DNS!)
