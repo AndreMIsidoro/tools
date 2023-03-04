@@ -42,3 +42,4 @@ In case this fails, you can always compile the tool from its' source code by run
 		-o : specify output file (still prints to the stdoutput)
 
 	vhost : virtual host brute-forcing mode (not the same as DNS!)
+		--append-domain <domain> : domain to be appended to the virtual domain from the word list

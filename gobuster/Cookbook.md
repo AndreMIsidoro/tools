@@ -8,6 +8,6 @@
 
 ### Brute force virtual host domains
 
-	gobuster vhost -w <wordlistpath> -u <target_ip>
+	gobuster vhost -w <wordlistpath> -u <target_ip> --append-domain <domain>
 	
-	Ex : gobuster vhost -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u <target_ip>
+	Ex : gobuster vhost -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -u <target_ip> --append-domain thtoppers.htb
