@@ -16,6 +16,10 @@ Gobuster is a tool used to brute-force:
 
 ## Installation
 
+    sudo apt install gobuster
+
+or try:
+
 First, you need to make sure you have Go installed on your Linux distribution, which is the programming
 language used to write the gobuster tool.
 
