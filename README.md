@@ -5,6 +5,7 @@
 	nmap
 	searchsplot
 	gobuster : Used to find URIs (directories and files) in web sites, etc.
+    wappalyzer : Used to find the technolagies used to build a webserver
 
 ## Execute Exploits
 
