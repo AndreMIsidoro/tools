@@ -7,6 +7,10 @@
 	gobuster : Used to find URIs (directories and files) in web sites, etc.
     wappalyzer : Used to find the technolagies used to build a webserver
 
+## Web Proxies
+    OWAS-ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
+    Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
+
 ## Execute Exploits
 
 	metasploit
