@@ -29,3 +29,11 @@ Search exploits for specific version
 Open shell from meterpreter
 
 	shell
+
+Run Local Exploit Suggester
+
+	This requires a session with a connection already established
+	search local_exploit_suggester
+	use <id_of_exploit>
+	set <session_id_with_connection>
+	run
