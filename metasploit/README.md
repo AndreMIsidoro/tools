@@ -7,6 +7,10 @@
 	sudo apt update
 	sudo apt install metasploit-framework
 
+## Commands
+
+	unset <variable> : returns variable to default value
+
 
 ## Cookbook
 
