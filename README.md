@@ -8,7 +8,7 @@
 	wappalyzer : Used to find the technolagies used to build a webserver
 
 ## Web Proxies
-	OWAS-ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
+	ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
 	Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
 	proxychains : routes all traffic coming from any command-line tool to any proxy we specify
 
@@ -22,10 +22,14 @@
 	immunity debugger : .exe files
 	uncompyle6 : Python cross-version byte-code decompiler
 
+## Password Cracking
+
+	JohnTheRipper: is a fast password cracker
+	thc hydra: is a fast password cracker
+
 ## Vulnerabilities Exploiter
 
 	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
-	JohnTheRipper: is a fast password cracker
 	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
 
 
