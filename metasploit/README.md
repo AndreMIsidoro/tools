@@ -9,8 +9,9 @@
 
 ## Commands
 
-	unset <variable> : returns variable to default value
+	msfconsole : starts metasploit framework console
 
+	unset <variable> : returns variable to default value
 
 ## Cookbook
 
