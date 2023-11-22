@@ -11,7 +11,9 @@
 
 	msfconsole : starts metasploit framework console
 
+	back : move back in context. Unuses a module.
 	unset <variable> : returns variable to default value
+	use <module_index> : loads module to execute
 
 ## Cookbook
 
