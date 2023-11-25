@@ -17,11 +17,10 @@ In the reverse shell write
 
 	python3 -c 'import pty;pty.spawn("/bin/bash")'
 
-Put nc in the background
-	CTRL+Z
+Put nc in the background by pressing CTRL+Z
+then write
 
-	stty raw -echo
-	fg
+	stty raw -echo; fg;
 	export TERM=xterm
 
 
