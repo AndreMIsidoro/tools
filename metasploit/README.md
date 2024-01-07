@@ -15,6 +15,11 @@
 	unset <variable> : returns variable to default value
 	use <module_index> : loads module to execute
 
+Module Commands
+
+	options: Show module options ands vars
+	set <var> <value>: set a value to a specific value
+
 ## Cookbook
 
 Show post modules
