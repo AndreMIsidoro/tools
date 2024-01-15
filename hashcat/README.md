@@ -11,4 +11,4 @@
 
 Using the rockyou.txt to break an hash
 
-	hashcat -a 0 -m <hash_type> /usr/share/wordlist/rockyou.txt
+	hashcat -a 0 -m <hash_type> <hash of path_to_hash_file> /usr/share/wordlist/rockyou.txt
