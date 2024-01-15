@@ -59,3 +59,7 @@
 ## Cryptography
 
 	RSACTFTools
+
+## Web Fuzzing
+
+	ffuf
