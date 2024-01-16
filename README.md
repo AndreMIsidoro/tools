@@ -22,10 +22,11 @@
 	immunity debugger : .exe files
 	uncompyle6 : Python cross-version byte-code decompiler
 
-## Password Cracking
+## Password and Hash Cracking
 
-	JohnTheRipper: is a fast password cracker
-	thc hydra: is a fast password cracker
+	JohnTheRipper: is a fast password cracker for offline
+	hydra: passowrd cracker for online login
+	hashcat: hash cracker
 
 ## Vulnerabilities Exploiter
 
