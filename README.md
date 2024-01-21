@@ -16,6 +16,10 @@
 
 	metasploit
 
+## Payload Generator
+
+	msfvenom
+
 ## Debugging and Reverse Engineering
 
 	ghidra : ELF files
