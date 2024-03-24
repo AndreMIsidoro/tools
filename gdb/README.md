@@ -22,3 +22,19 @@ Send input to the program
 
 	run $(python -c 'print <input>')
 
+
+# peda
+
+PEDA - Python Exploit Development Assistance for GDB
+
+https://github.com/longld/peda
+
+## commands
+
+checksec
+
+	Checks what security was used when creating the executable
+
+run < file.txt
+
+	Passes input to the exe  being debbuged
