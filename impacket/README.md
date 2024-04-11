@@ -4,8 +4,10 @@
 
 Impacket is a collection of Python classes for working with network protocols. (Speccially good for windows)
 
+https://github.com/fortra/impacket
 
-## Useful scripts
+
+## Useful scripts in the examples folder
 
 To connect to ms sql
 
