@@ -20,6 +20,11 @@ Module Commands
 	options: Show module options ands vars
 	set <var> <value>: set a value to a specific value
 
+
+## Use Guide
+
+Usually you want to set the RHOST and LHOST options in the exploits
+
 ## Cookbook
 
 Show post modules
