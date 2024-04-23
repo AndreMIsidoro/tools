@@ -20,3 +20,15 @@ sqlmap
 	-u URL, --url=URL			Target URL
 	--batch			Used for skipping any required user-input, by automatically choosing using the default option
 	--dump			Dumps DBMS database table entries
+
+
+## Usage
+
+sqlmap -u <address> --dump --batch
+sqlmap -r <request_file_path> --dump --batch
+
+if we dont find anything increase risk and level
+
+sqlmap -r <request_file_path> --dump --batch --risk 3
+sqlmap -r <request_file_path> --dump --batch --level 5
+sqlmap -r <request_file_path> --dump --batch --level 5 --risk 3
