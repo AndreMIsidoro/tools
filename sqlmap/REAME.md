@@ -16,6 +16,7 @@ or
 sqlmap
 
 	-h, --help			Show basic help message and exit
-	-hh					Show advanced help message and exit
-	-u URL, --url=URL	Target URL
-	--batch				Used for skipping any required user-input, by automatically choosing using the default option
+	-hh			Show advanced help message and exit
+	-u URL, --url=URL			Target URL
+	--batch			Used for skipping any required user-input, by automatically choosing using the default option
+	--dump			Dumps DBMS database table entries
