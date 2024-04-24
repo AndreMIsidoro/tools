@@ -30,5 +30,7 @@ sqlmap -r <request_file_path> --dump --batch
 if we dont find anything increase risk and level
 
 sqlmap -r <request_file_path> --dump --batch --risk 3
+
 sqlmap -r <request_file_path> --dump --batch --level 5
+
 sqlmap -r <request_file_path> --dump --batch --level 5 --risk 3
