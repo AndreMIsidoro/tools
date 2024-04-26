@@ -23,6 +23,8 @@ sqlmap
 	-p <injection_point>		Selects a specific injection point
 	--os-shell		Try to get a remote shell on the server
 	--is-dba		Check if we can get db admin priveledges
+	-D <database_name>		Scans for a specific database
+	-T <table_name>		Scans for a specific table
 
 
 ## Usage
