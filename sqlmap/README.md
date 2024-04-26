@@ -20,6 +20,7 @@ sqlmap
 	-u URL, --url=URL			Target URL
 	--batch			Used for skipping any required user-input, by automatically choosing using the default option
 	--dump			Dumps DBMS database table entries
+	-p <injection_point>		Selects a specific injection point
 
 
 ## Usage
@@ -34,3 +35,7 @@ sqlmap -r <request_file_path> --dump --batch --risk 3
 sqlmap -r <request_file_path> --dump --batch --level 5
 
 sqlmap -r <request_file_path> --dump --batch --level 5 --risk 3
+
+Injection on a specific field
+
+sqlmap -r <request_file_path> --batch -p <injection_field_name>
