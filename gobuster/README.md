@@ -47,3 +47,9 @@ In case this fails, you can always compile the tool from its' source code by run
 
 	vhost : virtual host brute-forcing mode (not the same as DNS!)
 		--append-domain <domain> : domain to be appended to the virtual domain from the word list
+
+	dns : Look for subdomains
+
+## More Info
+
+	https://erev0s.com/blog/gobuster-directory-dns-and-virtual-hosts-bruteforcing/
