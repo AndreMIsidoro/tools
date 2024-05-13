@@ -17,3 +17,9 @@ Requires ruby to be installed.
 	-i : Specifies the target ip
 	-u : Specifies the user to login
 	-p : Specifies the password to login
+
+## Usage
+
+Upload a file
+
+	upload <path_to_file_on_local> <Absolute_path_on_remote>
