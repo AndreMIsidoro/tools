@@ -20,6 +20,9 @@ Requires ruby to be installed.
 
 ## Usage
 
-Upload a file
+Upload and download a file
 
 	upload <path_to_file_on_local> <Absolute_path_on_remote>
+	download <absolute_path_on_remote> <absolute_path_local>
+
+
