@@ -17,3 +17,7 @@ Directory fuzzing
 Parameter fuzzing
 
 	ffuf -w /opt/useful/SecLists/Discovery/Web-Content/burp-parameter-names.txt:FUZZ -u http://admin.academy.htb:PORT/admin/admin.php?FUZZ=key -fs xxx
+
+Fuzzing a file inclusiong on windows
+
+	ffuf -w /user/share/wordlists/file_inclusion_windows.txt http://mailing.htb/download.php?file=FUZZ
