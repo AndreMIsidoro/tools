@@ -22,6 +22,10 @@ Fuzzing a file inclusion on windows
 
 	ffuf -w /user/share/wordlists/file_inclusion_windows.txt http://mailing.htb/download.php?file=FUZZ
 
+Content type header is need when fuzzing a POST
+
+	ffuf -w usernames_to_delete.txt:USERNAME -X POST -d "username=USERNAME&password=admin2" -u http://report.solarlab.htb:6791/login -H "Content-Type: application/x-www-form-urlencoded"
+
 
 ## More Information
 
