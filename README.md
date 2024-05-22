@@ -7,6 +7,14 @@
 	gobuster : Used to find URIs (directories and files) in web sites, etc.
 	wappalyzer : Used to find the technolagies used to build a webserver
 
+## Subdomain/Vhost Scans
+
+	gobuster dns
+	knockpy
+	fuff
+	dnsrecon
+
+
 ## Web Proxies
 	ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
 	Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
@@ -36,6 +44,10 @@
 
 	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
+
+## Port Forwarding
+
+	Chisel
 
 ## Windows
 
