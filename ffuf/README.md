@@ -20,7 +20,7 @@ Parameter fuzzing
 
 Fuzzing a file inclusion on windows
 
-	ffuf -w /user/share/wordlists/file_inclusion_windows.txt http://mailing.htb/download.php?file=FUZZ
+	ffuf -w /usr/share/wordlists/file_inclusion_windows.txt -u http://mailing.htb/download.php?file=FUZZ
 
 Content type header is need when fuzzing a POST
 
