@@ -4,6 +4,10 @@
 
 	Chisel is a fast TCP/UDP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network.
 
+## Installation
+
+	curl https://i.jpillora.com/chisel! | bash
+
 ## Usage
 
 Lets consider we want to reflect port 8000
