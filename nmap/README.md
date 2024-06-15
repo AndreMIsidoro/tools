@@ -22,6 +22,7 @@ https://nmap.org/book/man-briefoptions.html
 	-oA <basename>: Output in the three major formats at once
 	-Pn : Treat all hosts as online -- skip host discovery (good when dealing with firewalls)
 	-sU : UDP scan
+	-O : Enables OS detection
 
 
 ## Use nmap with a proxy (like Burp or ZAP)
