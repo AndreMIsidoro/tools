@@ -15,6 +15,7 @@ https://github.com/ShawnDEvans/smbmap
 
 	--no-banner : Removes the banner from the top of the output
 	--download '<sharename>\\<dirname>\\<filename>' : Downloads the file
+	--depth <depth_level> : Depth of recursive
 
 
 ## Cookbook
@@ -26,3 +27,7 @@ If we are getting this error:
 We might want to try using a filler username:
 
 	smbmap -H nest.htb --no-banner -u 'asdasd'
+
+List smb share contents
+
+	smbmap -H nest.htb --no-banner -u 'asdasda' -r 'Data' --depth 100
