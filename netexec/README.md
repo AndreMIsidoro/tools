@@ -23,6 +23,11 @@ netexec
 	<protocol> --help : shows protocol information
 	<protocol> -L : shows protocols modules
 
+## smb protocol
+
+	--shares : prints the smb shares
+		if we arent getting anything try user filler usernames and passwords: netexec smb nest.htb -u 'aasdasd' -p 'adsasd' --shares
+
 ## Usage Examples
 
 Print protocol available modules
