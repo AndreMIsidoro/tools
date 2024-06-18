@@ -25,3 +25,8 @@ Start an smb server
 	impacket-smbserver -smb2support -user <username> -password <password> <servername> <serverpath_of_files_to_share>
 
 	Example: impacket-smbserver -smb2support -user testuser -password testpassword mysmbserver $(pwd)
+
+Connect to the smb server on a windows machine by doing:
+
+	Win+r to open run
+	\\<ip_of_smb_server>\servername
