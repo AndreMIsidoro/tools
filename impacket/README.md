@@ -16,3 +16,12 @@ To connect to ms sql
 To connect a shell to windows remote host using a user and password
 
 	pytohn3 psexec.py <username>@<target_ip>
+
+
+## smb server
+
+Start an smb server
+
+impacket-smbserver -smb2support -user <username> -password <password> <servername> <serverpath>
+
+Example: impacket-smbserver -smb2support -user testuser -password testpassword mysmbserver $(pwd)
