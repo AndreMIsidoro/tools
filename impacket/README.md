@@ -22,6 +22,6 @@ To connect a shell to windows remote host using a user and password
 
 Start an smb server
 
-impacket-smbserver -smb2support -user <username> -password <password> <servername> <serverpath_of_files_to_share>
+	impacket-smbserver -smb2support -user <username> -password <password> <servername> <serverpath_of_files_to_share>
 
-Example: impacket-smbserver -smb2support -user testuser -password testpassword mysmbserver $(pwd)
+	Example: impacket-smbserver -smb2support -user testuser -password testpassword mysmbserver $(pwd)
