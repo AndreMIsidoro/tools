@@ -26,6 +26,14 @@ Content type header is need when fuzzing a POST
 
 	ffuf -w usernames_to_delete.txt:USERNAME -X POST -d "username=USERNAME&password=admin2" -u http://report.solarlab.htb:6791/login -H "Content-Type: application/x-www-form-urlencoded"
 
+Fuzz a req file:
+
+	Edit the request file and add the word FUZZ to wherever you want.
+
+	Then do: ffuf -w numbers2.txt -u http://editorial.htb/upload-cover -request req
+
+	And ffuf will replace the words from the wordlist in the request. You can test it with wireshark
+
 
 ## More Information
 
