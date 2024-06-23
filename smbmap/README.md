@@ -9,6 +9,7 @@ https://github.com/ShawnDEvans/smbmap
 ## Options
 
 	-H <HOST> : IP of target to enumerate
+	-A <pattern> : Define a file name pattern (regex) that auto downloads a file on a match (requires -r)
 
 	-r <sharename> : shows the contents of share
 
@@ -31,3 +32,7 @@ We might want to try using a filler username:
 List smb share contents
 
 	smbmap -H nest.htb --no-banner -u 'asdasda' -r 'Data' --depth 100
+
+Download all xml files found
+
+	smbmap -H nest.htb --no-banner -u 'asdasda' -r 'Data' --depth 100 -A xml
