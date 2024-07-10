@@ -52,6 +52,8 @@ In case this fails, you can always compile the tool from its' source code by run
 
 	dns : Look for subdomains
 
+	--exclude-lenght <length> : excludes response as a hit based on the length (size) of the response
+
 ## More Info
 
 	https://erev0s.com/blog/gobuster-directory-dns-and-virtual-hosts-bruteforcing/
