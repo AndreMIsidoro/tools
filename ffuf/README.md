@@ -34,6 +34,10 @@ Fuzz a req file:
 
 	And ffuf will replace the words from the wordlist in the request. You can test it with wireshark
 
+Fuzz multiple fields in file:
+
+	ffuf -w usernames.txt:USERNAME_FUZZ -w passwords.txt:PASSWORD_FUZZ -u http://report.solarlab.htb:6791 -request req_fuzz
+
 
 ## More Information
 
