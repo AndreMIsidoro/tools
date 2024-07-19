@@ -30,13 +30,17 @@ Fuzz a req file:
 
 	Edit the request file and add the word FUZZ to wherever you want.
 
-	Then do: ffuf -w numbers2.txt -u http://editorial.htb/upload-cover -request req
+	Then do: ffuf -w numbers2.txt -request req
 
 	And ffuf will replace the words from the wordlist in the request. You can test it with wireshark
+	By default ffuf will do the request in https even if the request file specifies that it is HTTP. If you really want HTTP you need to add the -request-proto http
+	
+	ffuf -w numbers2.txt -request req -request-proto http
 
 Fuzz multiple fields in file:
 
-	ffuf -w usernames.txt:USERNAME_FUZZ -w passwords.txt:PASSWORD_FUZZ -u http://report.solarlab.htb:6791 -request req_fuzz
+	ffuf -w usernames.txt:USERNAME_FUZZ -w passwords.txt:PASSWORD_FUZZ -request req_fuzz -request-proto http
+	USERNAME_FUZZ and PASSWORD_FUZZ need to be both in the req_fuzz file
 
 
 ## More Information
