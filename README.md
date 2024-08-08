@@ -4,6 +4,11 @@
 
 	foundry: toolkit for |Ethereum application development.
 
+## Credentials Hunting
+
+	pcredz - hunts for credentials in pcap files
+	trufflehog - hunts for credentials in it, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
+
 ## Information Gathering
 
 	nmap
