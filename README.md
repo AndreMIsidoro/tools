@@ -36,6 +36,7 @@
 ## Payload Generator
 
 	msfvenom
+	msfpayload
 
 ## Debugging and Reverse Engineering
 
