@@ -55,6 +55,7 @@
 
 	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
+	ssrfmap : Exploits the ssrf vulnerability
 
 ## Port Forwarding
 
