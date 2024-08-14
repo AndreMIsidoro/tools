@@ -7,6 +7,8 @@ Tools such as ffuf provide us with a handy automated way to fuzz the web applica
 ## Options
 
 	-fs: filters responses by response size
+	-fw: filters responses by number of words
+	-fc: filters responses by status code
 
 ## Usage
 
