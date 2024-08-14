@@ -16,3 +16,5 @@
 		Some generic usernames usually used as default
 	my_default_passwords.txt
 		Some generic passwords usually used as default
+	my_webserver_files.txt
+		Common files sometimes exposed in webservers
