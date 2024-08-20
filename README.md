@@ -48,6 +48,7 @@
 	immunity debugger : .exe files
 	uncompyle6 : Python cross-version byte-code decompiler
 	dnspy : .net decompiler https://github.com/dnSpy/dnSpy
+	dotpeek: .net decompiler
 
 ## Password and Hash Cracking
 
