@@ -9,11 +9,19 @@
 	pcredz - hunts for credentials in pcap files
 	trufflehog - hunts for credentials in it, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
 
+## Cryptography
+
+	RSACTFTools
+
+## Fuzzing
+
+	ffuf
+	gobuster
+
 ## Information Gathering
 
 	nmap
 	searchsploit : Used to find exploits
-	gobuster : Used to find URIs (directories and files) in web sites, etc.
 	wappalyzer : Used to find the technolagies used to build a webserver
 
 ## Packets Analyser/Inspector
@@ -29,6 +37,7 @@
 
 
 ## Web Proxies
+
 	ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
 	Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
 	proxychains : routes all traffic coming from any command-line tool to any proxy we specify
@@ -50,6 +59,8 @@
 	dnspy : .net decompiler https://github.com/dnSpy/dnSpy
 	dotpeek: .net decompiler
 
+	https://github.com/xiosec/Reverse-engineering
+
 ## Password and Hash Cracking
 
 	JohnTheRipper: is a fast password cracker for offline
@@ -69,31 +80,3 @@
 ## Windows
 
 	Impacket: Network and sql protocols
-
-
-## Console Commands
-
-**Web Browsers on Terminal**
-
-	lynx
-	w3m
-
-**md viewer**
-
-	grip : visualises .md files
-
-**Search engines**
-
-	surfraw : provides a fast UNIX command line interface to a variety of popular WWW search engines.
-
-**Free rdp**
-	xfreeredp : xfreerdp is an X11 Remote Desktop Protocol (RDP) client which is part of the FreeRDP project. An RDP server is built-in to many editions of Windows.
-
-
-## Cryptography
-
-	RSACTFTools
-
-## Web Fuzzing
-
-	ffuf
