@@ -13,6 +13,10 @@
 
 	RSACTFTools
 
+## Firmware
+
+	binwalk - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+
 ## Fuzzing
 
 	ffuf
