@@ -30,3 +30,8 @@ Connect to the smb server on a windows machine by doing:
 
 	Win+r to open run
 	\\<ip_of_smb_server>\servername
+
+
+## Remote connection to windows - psexec
+
+	impacket-psexec '<username>:<password>@<remote_host_ip>'
