@@ -22,6 +22,10 @@
 	ffuf
 	gobuster
 
+## Hardware
+
+	saleae - Hardware interface logic analyser
+
 ## Information Gathering
 
 	nmap
