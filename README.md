@@ -36,6 +36,10 @@
 
 	snort
 
+## Remote Desktop Protocol
+
+	xfreerdp
+
 ## Subdomain/Vhost Scans
 
 	gobuster dns
