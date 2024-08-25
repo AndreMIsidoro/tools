@@ -32,6 +32,14 @@
 	searchsploit : Used to find exploits
 	wappalyzer : Used to find the technolagies used to build a webserver
 
+## Ldap
+
+	bloodhound - BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory or Azure environment
+
+## Ldap - Kerberos
+
+	kerbrute - A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
+
 ## Packets Analyser/Inspector
 
 	snort
