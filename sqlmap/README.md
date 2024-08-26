@@ -19,12 +19,14 @@ sqlmap
 	-hh			Show advanced help message and exit
 	-u URL, --url=URL			Target URL
 	-p <injection_point>		Selects a specific injection point
+	-o - Chose all optimizations available
+
 	-D <database_name>		Scans for a specific database
 	-T <table_name>		Scans for a specific table
+
 	--threads <threads>		Max of 10 threads
 	--batch			Used for skipping any required user-input, by automatically choosing using the default option
 	--dump			Dumps DBMS database table entries
-
 	--baner		Retrieves dbms banner
 	--dbms <dbms_name>		Use only sqli for a specifc dbms
 	--os-shell		Try to get a remote shell on the server
