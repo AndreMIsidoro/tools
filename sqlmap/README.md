@@ -63,3 +63,7 @@ Then add the dbms flag, and enum the dbs, users and roles
 Then pick a db and enum the tables
 
 	sqlmap -r <> --batch --dbms=<> -D <db_name> --tables
+
+## More Information
+
+https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
