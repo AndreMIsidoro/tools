@@ -100,3 +100,4 @@
 ## Windows
 
 	Impacket: Network and sql protocols
+	RunasCs: is an utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
