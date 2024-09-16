@@ -4,8 +4,9 @@
 
 	foundry: toolkit for |Ethereum application development.
 
-## Credentials Hunting
+## Credentials/Passwords Hunting
 
+	mimikatz - extracts plaintext passwords, hash, PIN code and kerberos tickets from memory.
 	pcredz - hunts for credentials in pcap files
 	trufflehog - hunts for credentials in it, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
 

