@@ -3,3 +3,5 @@ readme.txt
 readme.md
 README.txt
 README.md
+./git/
+./git/HEAD
