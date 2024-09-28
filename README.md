@@ -10,7 +10,10 @@
 		mimikatz - extracts plaintext passwords, hash, PIN code and kerberos tickets from memory.
 		Snaffler - Finds credentials in a windows AD environment
 
-	pcredz - hunts for credentials in pcap files
+	pcap and network interfaces
+		pcredz - hunts for credentials in pcap files
+		net-creds - hunts for credentials in pcap files and network interfaces
+
 	trufflehog - hunts for credentials in it, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
 
 ## Cryptography
