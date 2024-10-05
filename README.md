@@ -41,6 +41,7 @@
 
 ## Ldap
 
+	ldapDomainDump - Gathers informaition from a ldap environment
 	bloodhound - BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory or Azure environment
 
 ## Ldap - Kerberos
