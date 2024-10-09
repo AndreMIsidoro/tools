@@ -109,6 +109,10 @@
 
 	Chisel
 
+## Utilities
+
+	zbarimg: scans image for bar and qr codes and prints any decoded data to stdout
+
 ## Windows
 
 	Impacket: Network and sql protocols
