@@ -17,8 +17,14 @@ Requires ruby to be installed.
 	-i : Specifies the target ip
 	-u : Specifies the user to login
 	-p : Specifies the password to login
+	-H: Specifies a hash instead of a password to login
 
 ## Usage
+
+evil-winrm -i <ip_to_remote_machine> -u 'username' -p 'password'
+
+evil-winrm -i <ip_to_remote_machine> -u 'username' -H 'hash'
+
 
 Upload and download a file
 
