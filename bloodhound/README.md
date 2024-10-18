@@ -7,8 +7,7 @@ BloodHound uses graph theory to reveal the hidden and often unintended relations
 
 ## Installation
 
-    pip install bloodhound
-
+    curl -L https://ghst.ly/getbhce | docker compose -f - up -d
 
 ## Usage
 
@@ -16,5 +15,4 @@ BloodHound uses graph theory to reveal the hidden and often unintended relations
 
 # More Information
 
-https://github.com/BloodHoundAD/BloodHound
-https://github.com/dirkjanm/BloodHound.py
+https://github.com/SpecterOps/BloodHound
