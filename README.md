@@ -4,6 +4,10 @@
 
 	foundry: toolkit for |Ethereum application development.
 
+## Cheatsheets
+
+	https://github.com/puzzithinker/cybersecurity_cheatsheets
+
 ## Credentials/Passwords Hunting
 
 	windows
