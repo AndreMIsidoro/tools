@@ -116,6 +116,7 @@
 ## Utilities
 
 	zbarimg: scans image for bar and qr codes and prints any decoded data to stdout
+	exiftool: Read and write meta information in files
 
 ## Windows
 
