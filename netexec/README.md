@@ -23,13 +23,13 @@ netexec
 	<protocol> --help : shows protocol information
 	<protocol> -L : shows protocols modules
 
-## smb protocol
+## SMB
 
 	--shares : prints the smb shares
 		if we arent getting anything try user filler usernames and passwords: netexec smb nest.htb -u 'aasdasd' -p 'adsasd' --shares
 	--continues-on-sucess: don't stop when found a valid login, continue to test the others
 
-## Usage Examples
+### Usage Examples
 
 Print protocol available modules
 
@@ -39,6 +39,10 @@ Connect to smb server using a file for username and passwords
 
 	netexec smb <target_ip> -u usernames.txt -p passwords.txt
 	netexec smb nest.htb -u users.txt -p welcome2019 --continue-on-success
+
+### Modules
+
+	-M spider_plus - creates a json file with the file tree of the shares
 
 ## More Information
 
