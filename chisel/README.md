@@ -28,6 +28,26 @@ Let's say that in a remote server there is the port 8000 that only accepts 127.0
 
 	Now in the local machine we can connet to this by accessing 127.0.0.1:8000
 
+### Using socks5
+
+To use socks5 to reverse ports with chisel we do
+
+In the remote/tartget host:
+
+	./chisel client <localhost_ip>:<chisel_server_port> R:socks
+
+In the local host:
+
+	./chisel server --reverse --socks5 --port <chisel_server_port>
+
+By default socks5 uses port 1080, so we can proxy our requests through this port:
+
+	Browser requests we can use foxy proxy
+
+	For command line requests we can use proxychains.
+		Check if proxychains config /etc/proxychains.conf is using socks 5:
+			socks5 127.0.0.1 1080
+
 
 ## More Information
 
