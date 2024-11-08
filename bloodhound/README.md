@@ -28,9 +28,15 @@ BloodHound uses graph theory to reveal the hidden and often unintended relations
 
 ## Usage Bloodhound
 
-    Now that we have collected the data go to http://127.0.0.1:8080/ui/administration/file-ingest and upload the zip created by bloodhound-python
+Start bloodhound by doing
 
-    After the status of the ingested data changes to complete go to http://127.0.0.1:8080/ui/explore
+    docker compose -f - up -d
+
+In the dir with the bloodhound compose file
+
+Now that we have collected the data go to http://127.0.0.1:8080/ui/administration/file-ingest and upload the zip created by bloodhound-python
+
+After the status of the ingested data changes to complete go to http://127.0.0.1:8080/ui/explore
 
 # More Information
 
