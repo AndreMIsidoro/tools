@@ -40,9 +40,25 @@ Connect to smb server using a file for username and passwords
 	netexec smb <target_ip> -u usernames.txt -p passwords.txt
 	netexec smb nest.htb -u users.txt -p welcome2019 --continue-on-success
 
+
 ### Modules
 
 	-M spider_plus - creates a json file with the file tree of the shares
+
+
+## LDAP
+
+Test if account exist without kereberos:
+
+	nxc ldap 192.168.1.0/24 -u users.txt -p '' -k
+
+Test credentials:
+
+	nxc ldap 192.168.1.0/24 -u user -H A29F7623FD11550DEF0192DE9246F46B
+
+	nxc ldap 192.168.1.0/24 -u user -p password
+
+https://www.netexec.wiki/ldap-protocol/enumerate-users
 
 ## More Information
 
