@@ -65,6 +65,16 @@ Enumerate users:
 
 https://www.netexec.wiki/ldap-protocol/authentication
 
+
+
+## FTP
+
+Test users
+
+netexec ftp <server_ip> -u <userfile> -p <password_file> --no-bruteforce --continue-on_success
+
+https://www.netexec.wiki/ftp-protocol/password-spraying
+
 ## More Information
 
 https://www.netexec.wiki/
