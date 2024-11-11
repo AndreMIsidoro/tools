@@ -22,13 +22,15 @@ BloodHound uses graph theory to reveal the hidden and often unintended relations
 
 
 
-    First we need to use https://github.com/BloodHoundAD/SharpHound or https://github.com/dirkjanm/BloodHound.py for data collection:
+## Usage Bloodhound
+
+First we need to use https://github.com/BloodHoundAD/SharpHound or https://github.com/dirkjanm/BloodHound.py for data collection:
 
     bloodhound-python -d <domain_name> -c all -u <username> -p <password> -ns <target_ip> --zip
 
-## Usage Bloodhound
+(If we are in a windows machine, logged in a a user, but with now password, we can download the sharphound.exe and run it in the context of the user)
 
-Start bloodhound by doing
+Then, start bloodhound by doing
 
     docker compose -f - up -d
 
