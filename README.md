@@ -24,6 +24,17 @@
 
 	RSACTFTools
 
+## Debugging and Reverse Engineering
+
+	ghidra : ELF files
+	immunity debugger : .exe files
+	uncompyle6 : Python cross-version byte-code decompiler
+	dnspy : .net decompiler https://github.com/dnSpy/dnSpy
+	dotpeek: .net decompiler
+	ILSpy: .net decompiler (best one)
+
+	https://github.com/xiosec/Reverse-engineering
+
 ## Firmware
 
 	binwalk - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
@@ -89,15 +100,7 @@
 	msfvenom
 	msfpayload
 
-## Debugging and Reverse Engineering
 
-	ghidra : ELF files
-	immunity debugger : .exe files
-	uncompyle6 : Python cross-version byte-code decompiler
-	dnspy : .net decompiler https://github.com/dnSpy/dnSpy
-	dotpeek: .net decompiler
-
-	https://github.com/xiosec/Reverse-engineering
 
 ## Password and Hash Cracking
 
