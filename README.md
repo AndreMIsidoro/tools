@@ -123,6 +123,7 @@
 
 	exiftool: Read and write meta information in files
 	jq: Command line json processor
+	xmlstarlet: Command line xml processor. Similar to jq
 	zbarimg: scans image for bar and qr codes and prints any decoded data to stdout
 
 ## Windows
