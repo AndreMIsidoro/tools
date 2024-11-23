@@ -84,6 +84,10 @@
 	fuff
 	dnsrecon
 
+## SMTP - Mail
+
+	swaks - Swiss Army Knife SMTP, the all-purpose SMTP transaction tester
+
 
 ## Web Proxies
 
