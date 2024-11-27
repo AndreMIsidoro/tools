@@ -7,10 +7,12 @@ BloodHound uses graph theory to reveal the hidden and often unintended relations
 
 ## Installation and First Setup
 
-    curl -L https://ghst.ly/getbhce 
-    docker compose -f - up -d
+    curl -L https://ghst.ly/getbhce -o docker-compose.yml
+    docker compose pull && docker compose up
 
     get the first time password from the container logs and go to http://127.0.0.1:8080 login with user 'admin' and the password and reset the password
+
+    Then git clone https://github.com/dirkjanm/BloodHound.py/tree/bloodhound-ce and
 
 ## Usage Bloodhound-python
 
