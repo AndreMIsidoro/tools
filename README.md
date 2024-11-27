@@ -60,6 +60,7 @@
 	bloodhound - BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory or Azure environment
 	bloodyAD - Interacts with the LDAP domain controoler in order to perform AD privesc
 	impacket-dacledit.py - Python script to read and manage the Discretionary Access Control List of an object
+	powersploit - Collection of powershell modules
 
 ## Ldap - Kerberos
 
