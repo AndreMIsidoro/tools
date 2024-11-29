@@ -92,6 +92,7 @@
 ## Port Forwarding and Tunneling
 
 	Chisel
+	ligolo-ng: An advanced, yet simple, tunneling tool
 
 ## Pwn Challenges
 
