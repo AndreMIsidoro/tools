@@ -13,4 +13,4 @@ Kerberos Pre-Authentication Weakness:
 ## Usage
 
     impacket-GetNPUsers <domain>/<username>[:password] -dc-ip <DomainControllerIP>
-    impacket-GetNPUsers <domain>/<username> -dc-ip <DomainControllerIP>
+    impacket-GetNPUsers <domain>/<username> -dc-ip <DomainControllerIP> -no-pass
