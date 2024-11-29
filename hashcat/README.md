@@ -8,6 +8,11 @@
 	Example : hashid '$1$pdQG$o8nrSzsGXeaduXrjlvKc91' -m
 
 
+## rules
+
+	hashcat <hash> <path_to_dictionary> -r /usr/share/hashcat/rules/best64.rule
+
+
 ## Examples
 
 Using the rockyou.txt to break an hash
