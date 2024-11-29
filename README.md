@@ -35,6 +35,14 @@
 
 	https://github.com/xiosec/Reverse-engineering
 
+## Exploits
+
+	metasploit
+	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
+	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
+	ssrfmap : Exploits the ssrf vulnerability
+	xssstrike : Identifies xss vulnerabilities
+
 ## Firmware
 
 	binwalk - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
@@ -69,6 +77,21 @@
 ## Packets Analyser/Inspector
 
 	snort
+	
+## Password and Hash Cracking
+
+	JohnTheRipper: is a fast password cracker for offline
+	hydra: passowrd cracker for online login
+	hashcat: hash cracker
+
+## Payload Generator
+
+	msfvenom
+	msfpayload
+	
+## Port Forwarding and Tunneling
+
+	Chisel
 
 ## Pwn Challenges
 
@@ -96,33 +119,10 @@
 	Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
 	proxychains : routes all traffic coming from any command-line tool to any proxy we specify
 
-## Execute Exploits
+## Windows
 
-	metasploit
-
-## Payload Generator
-
-	msfvenom
-	msfpayload
-
-
-
-## Password and Hash Cracking
-
-	JohnTheRipper: is a fast password cracker for offline
-	hydra: passowrd cracker for online login
-	hashcat: hash cracker
-
-## Vulnerabilities Exploiter
-
-	Responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
-	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
-	ssrfmap : Exploits the ssrf vulnerability
-	xssstrike : Identifies xss vulnerabilities
-
-## Port Forwarding
-
-	Chisel
+	Impacket: Network and sql protocols
+	RunasCs: is an utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
 
 ## Utilities
 
@@ -130,8 +130,3 @@
 	jq: Command line json processor
 	xmlstarlet: Command line xml processor. Similar to jq
 	zbarimg: scans image for bar and qr codes and prints any decoded data to stdout
-
-## Windows
-
-	Impacket: Network and sql protocols
-	RunasCs: is an utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
