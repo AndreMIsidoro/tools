@@ -1,32 +1,61 @@
-# Nmap
+# nmap
 
 ## Overview
 
-Nmap ("Network Mapper") is a free and open source utility for network discovery and security auditing
-## Command Options
-
-https://nmap.org/book/man-briefoptions.html
-
-**Ports Scan**
-
-	-p: Selects which port to scan
-	--min-rate : This is used to specify the minimum number of packets that Nmap should
-	send per second; it speeds up the scan as the number goes higher
-
-**Script Scan**
-
-	-A: Enable OS detection, version detection, script scanning, and traceroute
-	-sC: equivalent to --script=default; runs default scripts
-	-sV: Probe open ports to determine service/version info
-    -sS: Stealth scan. It's the default scan with root privileges
-	-oA <basename>: Output in the three major formats at once
-	-Pn : Treat all hosts as online -- skip host discovery (good when dealing with firewalls)
-	-sU : UDP scan
-	-O : Enables OS detection
+## Usage
 
 
-## Use nmap with a proxy (like Burp or ZAP)
 
-Just add the --proxies flag to specify the proxy to be used:
 
-	nmap --proxies http://127.0.0.1:8080 SERVER_IP -pPORT -Pn -sC
+**Scan network with wildcards**
+
+	nmap 172.28.23.*
+
+**Find live host in network**
+
+	nmap -sP 172.28.23.*
+
+**Scan specific port**
+	
+	nmap -p 61616 172.28.23.67
+
+**Scan all ports**
+
+	nmap -p- 172.28.23.67
+
+**Only show open ports**
+
+	nmap --open 172.28.23.67
+
+**Detect OS**
+
+	nmap -O ip
+
+**Fastest way to scan**
+
+	nmap -T5 iprange
+
+**Detect port service and version**
+
+	nmap -sV 172.28.23.67
+
+**No port scan**
+
+	nmap -sn 
+
+**Generate xml Report and convert it to HTML**
+
+    nmap -T4 -p 1-1000 -oX output.xml scanme.nmap.org
+    xsltproc output.xml -o output.html
+
+**Fast Discovery Scan**
+
+	nmap -T5 -sL 172.28.23.*
+
+	if -sL doens't work then
+
+	nmap -T5 -F 172.28.23.*
+
+**Faster Discovery Scan**
+
+	nmap -p- --min-rate=1000 -sV <target_ip>
