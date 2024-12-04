@@ -1,4 +1,4 @@
-# impacket GetUserSPNs
+# impacket GetUserSPNs - GetUserServicePrincipalNames
 
 ## Overview
 
