@@ -39,3 +39,14 @@ SecretDumps, on the other hand, often works without needing to directly inject i
 
     impacket-secretdump -sam <target_ip> -user <username> -password <password>
     impacket-secretdump -ntds <target_ip> -user <username> -password <password>
+
+## Permissions Required
+
+| Privilege               | Local Machine (SAM)  | Domain Controller (NTDS.dit) |
+|-------------------------|----------------------|-----------------------------|
+| **Local Administrator**  | Required             | Optional (but needed for local access) |
+| **Domain Administrator** | Not required         | Required (for domain access) |
+| **SeDebugPrivilege**     | Required             | Required                    |
+| **SeBackupPrivilege**    | Optional             | Optional                    |
+| **SeTakeOwnershipPrivilege** | Optional        | Optional                    |
+| **Remote Execution Permissions** | Optional (if running remotely) | Required (if running remotely) |
