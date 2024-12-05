@@ -56,9 +56,13 @@
 
 	saleae - Hardware interface logic analyser
 
-## Information Gathering
+## Host Discovery
 
 	nmap
+	fping
+
+## Information Gathering
+
 	searchsploit : Used to find exploits
 	wappalyzer : Used to find the technolagies used to build a webserver
 
