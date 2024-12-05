@@ -37,8 +37,11 @@ First we need to use https://github.com/BloodHoundAD/SharpHound or https://githu
 
     bloodhound-python -d <domain_name> -c all -u <username> -p <password> -ns <target_ip> --zip
 
-(If we are in a windows machine, logged in a a user, but with now password, we can download the sharphound.exe and run it in the context of the user)
+If we are in a windows machine, logged in a a user, but with now password, we can download the sharphound.exe and run it in the context of the user
+
     ./sharphound.exe -c all
+
+Using sharphound is better since more up to date
 
 Then, start bloodhound by doing
 
