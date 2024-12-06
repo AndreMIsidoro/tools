@@ -9,6 +9,9 @@
 	https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_linux.txt
 	https://github.com/carlospolop/Auto_Wordlists/blob/main/wordlists/file_inclusion_windows.txt
 
+## Usernames
+
+	https://github.com/insidetrust/statistically-likely-usernames
 
 ## My wordlists
 
