@@ -10,8 +10,9 @@ tool for enumerating information from Windows and Samba systems, aimed for secur
 
 ## Options
 
-    -A ALl simple enumeration
+    -A All simple enumeration
     -P Get password policy information via RPC
+    -U Get User list
     -oA Writes output to YAML and JSON file
 
 
@@ -24,6 +25,10 @@ Find out password policy
 Do all simple enumeration
 
     enum4linux-ng -A <target_ip> -oA <ouput_file>
+
+Do a smb null session to get userlists
+
+    enum4linux-ng -U <target-ip>
 
 
 ## More Information
