@@ -89,6 +89,12 @@
 	hydra: passowrd cracker for online login
 	hashcat: hash cracker
 
+## Password Spray
+
+	kerbrute - Linux/Windows
+	DomainPasswordSpay - Windows
+
+
 ## Payload Generator
 
 	msfvenom
