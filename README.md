@@ -76,6 +76,7 @@
 	impacket-secretdump - Python scrip extract sensitive information from a compromised system, such as password hashes, Kerberos tickets, and other credentials stored in Windows' LSASS (Local Security Authority Subsystem Service)
 	kerbrute - A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
 	powersploit - Collection of powershell modules
+	rpcclient - Linux - Query domain information
 
 
 ## Packets Analyser/Inspector
