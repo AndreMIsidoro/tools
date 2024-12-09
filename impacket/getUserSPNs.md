@@ -23,5 +23,15 @@ The tool can display a list of users and the SPNs associated with those users, w
 ## Usage
 
     impacket-GetUserSPNs <domain>/<username>[:password] -dc-ip <DomainControllerIP>
+
+Listing SPN Accounts
+
     impacket-GetUserSPNs <domain>/<username> -dc-ip <DomainControllerIP> -no-pass
+
+Requesting all tgs tickets
+
     impacket-GetUserSPNs -request -dc-ip <DomainControllerIP> <domain>/<username>
+
+Reuqest ticker for specific SPN
+
+    impacket-GetUserSPNs  -dc-ip <DomainControllerIP> <domain>/<username> -request-user <spn_name>
