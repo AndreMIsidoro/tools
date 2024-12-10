@@ -8,4 +8,4 @@ trufflehog hunts for credentians in Git, Jira, Slack, Confluence, Microsoft Team
 
 Hunt for credentianls in local repo:
 
-	trufflehog git file://<path_to_local_dir>
+	trufflehog git file:///<path_to_local_dir>
