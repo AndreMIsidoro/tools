@@ -10,6 +10,8 @@
 
 ## Credentials/Passwords Hunting
 
+	git-dumper - A tool to dump a git repository from a website
+
 	windows
 		mimikatz - extracts plaintext passwords, hash, PIN code and kerberos tickets from memory.
 		Snaffler - Finds credentials in a windows AD environment
