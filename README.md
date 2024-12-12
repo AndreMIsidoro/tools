@@ -18,7 +18,7 @@
 		pcredz - hunts for credentials in pcap files
 		net-creds - hunts for credentials in pcap files and network interfaces
 
-	trufflehog - hunts for credentials in it, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
+	trufflehog - hunts for credentials in Git, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
 
 ## Cryptography
 
