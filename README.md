@@ -77,6 +77,7 @@
 	kerbrute - A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
 	powersploit - Collection of powershell modules
 	rpcclient - Linux - Query domain information
+	Rubeus - Windows - Kerberosting tool
 
 
 ## Packets Analyser/Inspector
