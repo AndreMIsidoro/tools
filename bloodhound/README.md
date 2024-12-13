@@ -53,6 +53,15 @@ Now that we have collected the data go to http://127.0.0.1:8080/ui/administratio
 
 After the status of the ingested data changes to complete go to http://127.0.0.1:8080/ui/explore
 
+
+## Useful Queries
+
+Theses are some useful queries we can run on the Analysis tab:
+
+    Find Computers with Unsupported Operating Systems - good to find possible vulnureble systems
+    Find Computers where Domain Users are Local Admins - Any account we control will be local admin. We may also retrieve some credentials from memory
+
+
 # More Information
 
 https://github.com/SpecterOps/BloodHound
