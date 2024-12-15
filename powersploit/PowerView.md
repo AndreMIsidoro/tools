@@ -6,6 +6,27 @@ PowerView is series of functions that performs network and Windows domain enumer
 
 ## Functions
 
+
+### Get-DomainGroupMember
+
+Retrieves domain group specific information
+
+    Get-DomainGroupMember -Identity "Domain Admins" -Recurse
+
+### Get-DomainUser
+
+Retrieves information about a domain user.
+
+We can find users with SPN set:
+
+    Get-DomainUser -SPN -Properties samaccountname,ServicePrincipalName
+
+### Get-DomainTrustMapping
+
+Enumerates the domain trust mappings
+
+    Get-DomainTrustMapping
+
 ### Set-DomainUserPassword
 
 The Set-DomainUserPassword cmdlet is used in PowerShell to change or set the password for a user account in an Active Directory domain.
@@ -18,3 +39,9 @@ For example:
 
     $SecPassword = ConvertTo-SecureString 'Password123!' -AsPlainText -Force
     Set-DomainUserPassword -Identity Jacob.Surname -AccountPassword $SecPassword
+
+### Test-AdminAccess
+
+Test for local admin access on either the current machine or a remote one:
+
+    Test-AdminAccess -ComputerName <hostname>
