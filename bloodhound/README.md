@@ -61,6 +61,15 @@ Theses are some useful queries we can run on the Analysis tab:
     Find Computers with Unsupported Operating Systems - good to find possible vulnureble systems
     Find Computers where Domain Users are Local Admins - Any account we control will be local admin. We may also retrieve some credentials from memory
 
+## Custom Cypher Queries
+
+Users that can ps remote
+
+    MATCH p1=shortestPath((u1:User)-[r1:MemberOf*1..]->(g1:Group)) MATCH p2=(u1)-[:CanPSRemote*1..]->(c:Computer) RETURN p2
+
+Useers with SQLAdmin
+
+    MATCH p1=shortestPath((u1:User)-[r1:MemberOf*1..]->(g1:Group)) MATCH p2=(u1)-[:SQLAdmin*1..]->(c:Computer) RETURN p2
 
 # More Information
 
