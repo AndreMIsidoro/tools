@@ -28,7 +28,13 @@ Crack zip password file
 	zip2john <file>.zip > fileName.john
 	john --show fileName.john
 
-Cradk id_rsa private keys
+Crak id_rsa private keys
 
 	ssh2john id_rsa > id_rsa.hash
 	john id_rsa.hash --wordlist=/usr/share/wordlists/rockyou.txt
+
+Crack .doc files
+
+	office2john <filename>.doc > doc_file_hash
+
+	john doc_file_hash --wordlist=/usr/share/wordlists/rockyou.txt
