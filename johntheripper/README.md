@@ -8,12 +8,18 @@ John the Ripper is a fast password cracker
 
 	-w : Path to which wordlist to use
 
-## Word Lists
+## Usage
 
-Rock You
+First try to crack the file with the rockyou wordlist.
 
-	Comes pre installed in Kali in /usr/share/wordlists/rockyou.txt
-	https://github.com/josuamarcelc/common-password-list
+If it fails, append the --rules flag
+
+	john <file_to_crack> --wordlist=/usr/share/rockyou.txt --rules
+
+If this fails, try the default bruteforce, with no options and no wordlist:
+
+	john <file_to_crack>
+
 
 ## Cookbook
 
