@@ -70,6 +70,7 @@
 ## Ldap
 
 	activeDirectory Powershell Module - group of PowerShell cmdlets for administering an Active Directory environment from the command line.
+	adrecon - ADRecon is a tool which extracts and combines various artefacts (as highlighted below) out of an AD environment
 	bloodyAD - Interacts with the LDAP domain controoler in order to perform AD privesc
 	enum4linux-ng - Basic enum of ldap services (RPC,SMB)
 	ldapDomainDump - Gathers informaition from a ldap environment
