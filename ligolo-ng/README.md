@@ -1,4 +1,4 @@
-# ligolo
+# ligolo-ng
 
 ## Overview
 
@@ -49,3 +49,6 @@ Finally you should be able now to simple do:
 And the icmp packets will be route through MS01 to DC01
 
 
+## More Information
+
+https://github.com/nicocha30/ligolo-ng
