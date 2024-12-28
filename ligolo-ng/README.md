@@ -25,7 +25,7 @@ Then start the interface:
 
 Then start the proxy in the localhost:
 
-    ./proxy -selfcert
+    ./proxy -selfcert -laddr 0.0.0.0:<desired_proxy_port>
 
 Then on the machine MS01, start the agent:
 
@@ -40,6 +40,9 @@ Back on the proxy, after the agent has joined:
 Then add the route to DC01 to the interface:
 
     sudo ip route add <subnet_mask_dc01> dev ligolo
+
+For example
+
     sudo ip route add 10.10.1.0/24 dev ligolo
 
 Finally you should be able now to simple do:
