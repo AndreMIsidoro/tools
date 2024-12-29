@@ -51,6 +51,12 @@ Finally you should be able now to simple do:
 
 And the icmp packets will be route through MS01 to DC01
 
+## Tips
+
+When using nmap, you should use --unprivileged or -PE to avoid false positives.
+
+    nmap -Pn -oN dc01_nmap.out --unprivileged DC01.INLANEFREIGHT.LOCAL
+
 
 ## More Information
 
