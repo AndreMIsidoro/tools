@@ -39,3 +39,16 @@ You should see the hash printed on Responder. Save the hash to a file and crack 
 
 	-I <interface_name> : Sets which interface to linsten/use
 	-A:	Analyse mode. Sees requests but doesnt respond.
+
+	-w: enables SMB poisoning.
+	-r: captures hashes from NTLM authentication.
+	-f: forces logging to a file.
+
+
+## Usage
+
+	sudo responder -I <interface_name> wrf
+
+Only analyse
+
+	sudo responder -I <interface_name> -A
