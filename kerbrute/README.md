@@ -14,7 +14,7 @@ A tool to quickly bruteforce and enumerate valid Active Directory accounts throu
 Test usernames to see if they are on the domain:
 
     kerbrute userenum --dc <ip_to_domain_controller> -d <full_domain_name> <path_to_file_with_usernames>
-        kerbrute username --dc 10.10.10.10 -d jab.htb usernames.txt
+        kerbrute userenum --dc 10.10.10.10 -d jab.htb usernames.txt
 
 Do a password spray:
 
