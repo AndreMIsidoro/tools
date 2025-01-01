@@ -38,3 +38,4 @@ You should see the hash printed on Responder. Save the hash to a file and crack 
 ## Command Options
 
 	-I <interface_name> : Sets which interface to linsten/use
+	-A:	Analyse mode. Sees requests but doesnt respond.
