@@ -128,6 +128,10 @@
 
 	xfreerdp
 
+## SMB
+
+	smbclient - command-line tool that allows you to access shared files and printers over the Server Message Block (SMB) protocol
+
 ## Subdomain/Vhost Scans
 
 	gobuster dns
