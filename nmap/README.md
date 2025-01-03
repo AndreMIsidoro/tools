@@ -2,9 +2,15 @@
 
 ## Overview
 
+## Options
+
+	-iL <hosts_file_name>: Specifies a file with a list of hosts to scan
+
 ## Usage
 
+Specifiy a list of hosts in a file
 
+	sudo nmap -v -A -iL hosts.txt -oN /home/User/Documents/host-enum
 
 
 **Scan network with wildcards**
