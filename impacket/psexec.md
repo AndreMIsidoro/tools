@@ -6,4 +6,6 @@ PsExec is a powerful command-line tool from Microsoft's Sysinternals suite that 
 
 ## Usage
 
-psexec.py <admin_username>@<target_ip>
+psexec.py <admin_username>:<password>@<target_ip>
+
+impacket-psexec '<username>@<target_ip>' -hashes <lm_hash>:<nt_hash>
