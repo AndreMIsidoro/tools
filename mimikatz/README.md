@@ -32,3 +32,9 @@ or
 
     privilege::debug
     sekurlsa::logonpasswords
+
+## Tips
+
+Convert base64 tickets to be cracked in linux hosts:
+
+    echo "<base64 blob>" | tr -d \\n
