@@ -40,6 +40,7 @@
 ## DNS
 
 	nslooup -  is a command-line tool used to query Domain Name System (DNS) servers to obtain domain name or IP address mapping information.
+	dnsrecon - tool used for dns enumeration
 
 ## Exploits
 
