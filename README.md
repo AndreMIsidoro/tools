@@ -121,6 +121,10 @@
 	Chisel
 	ligolo-ng: An advanced, yet simple, tunneling tool
 
+## PrivEsc
+
+	winPEAS: Script for windows priv esc
+
 ## Pwn Challenges
 
 	pwntools	-	A python package with a command line interface with a lot of useful tools for ctf challenges
