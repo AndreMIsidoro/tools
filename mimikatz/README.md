@@ -20,13 +20,16 @@ It is always a good idea to type "log" before running any commands in "Mimikatz"
 
     log <filename>.log
 
+Dump a process
 
     sekurlsa::minidump <process_dump>   loads process dump
+
+Retrieves credentials that are stored in the memory (RAM) for currently logged-on users. It specifically targets the LSASS (Local Security Authority Subsystem Service) process, which handles user authentication in Windows. Plaintext passwords, hashes, and Kerberos tickets for all the active user sessions. It can grab credentials from memory that are in use or recently used by the system.
+
     sekurlsa::logonpasswords    Searches for passwords
 
 
-To do a lsa dump
-
+Extract information directly from the Local Security Authority (LSA) secrets and the Security Account Manager (SAM) database. LSA Secrets: It can pull stored passwords from the LSA, including passwords for services or cached domain credentials. SAM Hashes: You can also use this to dump user account hashes stored in the SAM database (not directly from memory like sekurlsa::logonpasswords). More focus on stored or system-wide credentials rather than just user session passwords.
 
     privilege::debug
     lsadump::lsa /inject
