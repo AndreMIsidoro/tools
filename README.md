@@ -138,16 +138,21 @@
 
 	smbclient - command-line tool that allows you to access shared files and printers over the Server Message Block (SMB) protocol
 
+## SMTP - Mail
+
+	swaks - Swiss Army Knife SMTP, the all-purpose SMTP transaction tester
+
+## SNMP - Simple Network Management Protocol
+
+	snmpwalk -  a command-line tool used to retrieve a large amount of information from an SNMP-enabled device
+
+
 ## Subdomain/Vhost Scans
 
 	gobuster dns
 	knockpy
 	fuff
 	dnsrecon
-
-## SMTP - Mail
-
-	swaks - Swiss Army Knife SMTP, the all-purpose SMTP transaction tester
 
 
 ## Web Proxies
