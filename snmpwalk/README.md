@@ -8,7 +8,7 @@ snmpwalk is a command-line tool used to retrieve a large amount of information f
 
     -v <version>: Specifies the SNMP version
     -c <community_string>: The SNMP community string, which acts like a password. Common values are public (for read-only access) and private (for read-write access).
-    -t <ip>: Target ip
+    -t <int>: Request timeout
 
 
 ## Usage
