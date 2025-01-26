@@ -54,10 +54,11 @@
 
 	binwalk - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
 
-## Fuzzing
+## Fuzzing and dirbusters
 
 	ffuf
 	gobuster
+	feroxbuster: Feroxbuster is an open-source, fast, and flexible directory and file brute-forcing tool used primarily for web application security testing.
 
 ## Hardware
 
