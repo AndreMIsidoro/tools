@@ -11,6 +11,7 @@
 ## Credentials/Passwords Hunting
 
 	git-dumper - A tool to dump a git repository from a website
+	laZagne - is an open-source tool primarily used for password recovery.
 
 	windows
 		mimikatz - extracts plaintext passwords, hash, PIN code and kerberos tickets from memory.
