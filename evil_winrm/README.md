@@ -19,6 +19,28 @@ Requires ruby to be installed.
 	-p : Specifies the password to login
 	-H: Specifies a hash instead of a password to login
 
+
+## Making evil-winrm work with krb5
+
+https://gist.github.com/zhsh9/f1ba951ec1eb3de401707bbbec407b98
+
+```
+sudo python config_krb5.py <domain_name> <domain_controller_ip>
+```
+
+this will create a /etc/krb5.conf
+
+Then 
+```
+export KRB5CCNAME=<tgt>.ccache
+```
+anf finally
+
+```
+evil-winrm -i <ip> -r <domain>
+```
+
+
 ## Usage
 
 evil-winrm -i <ip_to_remote_machine> -u 'username' -p 'password'
