@@ -7,4 +7,4 @@ The Impacket wmiexec.py tool typically uses TCP port 135 as it leverages the DCO
 
 ## Usage
 
-impacket-wmiexec '<username>:<password>@<remote_host_ip>'
+impacket-wmiexec '[username]:[password]@[remote_host_ip]'
