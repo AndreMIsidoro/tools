@@ -26,7 +26,7 @@ dig MX <domain>
 Query a Name Server record
 
 ```
-dig NS <domain>
+dig ns <domain>
 ```
 
 Reverse DNS Lookup
