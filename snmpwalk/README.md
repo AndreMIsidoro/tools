@@ -15,4 +15,6 @@ snmpwalk is a command-line tool used to retrieve a large amount of information f
 
 ```
 snmpwalk -c public -v1 -t 10 10.10.11.48
+
+snmpwalk -v X -c public <target_ip> NET-SNMP-EXTEND-MIB::nsExtendOutputFull
 ```
