@@ -51,6 +51,14 @@ Finally you should be able now to simple do:
 
 And the icmp packets will be route through MS01 to DC01
 
+## Reverse Port Forward throgh agent to proxy
+
+When the proxy is running in localhost. In a ligolo session, use the listener_add to start a reverse port forward through the agent to the proxy:
+
+    listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:4321 --tcp
+
+This will create a TCP listening socket on the agent (0.0.0.0:1234) and redirect connections to the 4321 port of the proxy server.
+
 ## Tips
 
 When using nmap, you should use --unprivileged or -PE to avoid false positives.
