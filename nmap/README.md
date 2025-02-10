@@ -8,6 +8,9 @@
 	-n: Avoid dns resolution
 	-Pn: Skip the host discovery phase, assumes host is online
 	-sS: Perform a stealth (SYN) scan
+	-sn: Disables port scanning
+
+	--packet-trace: Shows all packets sent and received
 
 
 ## -Pn 
@@ -31,6 +34,13 @@ Specifiy a list of hosts in a file
 Silent scan:
 
 	nmap -sS -T1 -n 192.168.1.1
+
+
+Host discovery:
+
+```
+sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
+```
 
 
 **Scan network with wildcards**
