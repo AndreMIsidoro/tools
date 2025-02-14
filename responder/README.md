@@ -43,12 +43,13 @@ You should see the hash printed on Responder. Save the hash to a file and crack 
 	-w: enables SMB poisoning.
 	-r: captures hashes from NTLM authentication.
 	-f: forces logging to a file.
+	-v: increase verbosity
 
 
 ## Usage
 
-	sudo responder -I <interface_name> wrf
+	sudo responder -I <interface_name> -wrf -v
 
 Only analyse
 
-	sudo responder -I <interface_name> -A
+	sudo responder -I <interface_name> -A -v
