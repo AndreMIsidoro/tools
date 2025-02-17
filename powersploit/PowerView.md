@@ -6,12 +6,33 @@ PowerView is series of functions that performs network and Windows domain enumer
 
 ## Functions
 
+### Get-Domain
 
+```
+#Retrieves information about the current Active Directory domain
+Get-Domain
+
+#Enumerate Other Domains
+Get-Domain -Domain <domain_name>
+
+```
 ### Get-DomainGroupMember
 
 Retrieves domain group specific information
 
     Get-DomainGroupMember -Identity "Domain Admins" -Recurse
+
+### Get-DomainPolicy
+
+Retrieves Group Policy settings related to the domain, specifically the Default Domain Policy and Default Domain Controllers Policy
+
+```
+Get-DomainPolicy
+
+#Will show us the policy configurations of the Domain about system access or kerberos
+Get-DomainPolicy | Select-Object -ExpandProperty SystemAccess
+Get-DomainPolicy | Select-Object -ExpandProperty KerberosPolicy
+```
 
 ### Get-DomainUser
 
