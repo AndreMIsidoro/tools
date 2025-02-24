@@ -10,3 +10,12 @@ https://github.com/NationalSecurityAgency/ghidra
 
 To start analysing a file, create a new project, then import the file you want to reverse and finally click on the green dragon (code browser).
 In the code browser open the file again.
+
+## Scripting
+
+Ghidra has a few options when it comes to extending functionality with custom scripts. Ghidra is written in Java and can be extended by writing Java code that will be loaded directly into the running process or, you can alternatively use a Jython interface to author scripts in Python. Beyond that, Ghidra also has multiple APIs to choose from. For the purpose of this post, we will craft a basic Python Ghidra script.
+
+### Scan for dangerous functions
+
+https://medium.com/@cy1337/vulnerability-analysis-with-ghidra-scripting-ccf416cfa56d
+https://secur3.us/GhidraFiles/danger_check.py
