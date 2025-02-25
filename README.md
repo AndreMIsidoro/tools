@@ -10,6 +10,8 @@
 
 ## Credentials/Passwords Hunting
 
+	default-credentials - Database with defaults credentials of main vendors
+
 	git-dumper - A tool to dump a git repository from a website
 	laZagne - is an open-source tool primarily used for password recovery.
 
