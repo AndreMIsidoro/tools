@@ -59,6 +59,16 @@ When the proxy is running in localhost. In a ligolo session, use the listener_ad
 
 This will create a TCP listening socket on the agent (0.0.0.0:1234) and redirect connections to the 4321 port of the proxy server.
 
+## Cleaning up
+
+After using ligolo, you can delete the created interface with:
+
+```shell
+sudo ip link delete ligolo
+```
+
+This will also delete the routes created.
+
 ## Tips
 
 When using nmap, you should use --unprivileged or -PE to avoid false positives.
