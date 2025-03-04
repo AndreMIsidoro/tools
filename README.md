@@ -46,12 +46,13 @@
 	dnsrecon - tool used for dns enumeration
 	dig - query dns information
 
-## Exploits
+## Exploits and Vulnerabilities
 
 	metasploit
 	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
 	ssrfmap : Exploits the ssrf vulnerability
 	xssstrike : Identifies xss vulnerabilities
+	xxe injector: Automation tool for xxe vulnerability.
 
 ## Firmware
 
