@@ -17,6 +17,10 @@ https://www.revshells.com/
 
 ## Web shells
 
+Find web shells in :
+
+/usr/share/laudanum
+
 ### PHP
 
 	https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
