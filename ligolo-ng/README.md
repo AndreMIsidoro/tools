@@ -73,7 +73,10 @@ This will also delete the routes created.
 
 When using nmap, you should use --unprivileged or -PE to avoid false positives.
 
-    nmap -Pn -oN dc01_nmap.out --unprivileged DC01.INLANEFREIGHT.LOCAL
+```shell
+nmap -Pn -oN dc01_nmap.out --unprivileged DC01.INLANEFREIGHT.LOCAL
+
+nmap -Pn -oN dc01_nmap.out --unprivileged -iL live_hosts
 
 
 ## More Information
