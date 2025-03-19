@@ -45,7 +45,11 @@ Using sharphound is better since more up to date
 
 Then, start bloodhound by doing
 
-    docker compose -f - up -d
+```shell
+docker compose -f - up -d
+#or
+docker compose -f docker-compose.yml up -d
+```
 
 In the dir with the bloodhound compose file
 
