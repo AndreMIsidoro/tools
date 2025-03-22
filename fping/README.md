@@ -17,5 +17,5 @@ Where fping shines is in its ability to issue ICMP packets against a list of mul
 
 Basic command
 
-    fping -asgq 172.16.5.0/23
+    fping -asgq 172.16.5.0/23 | tee live_hosts
 
