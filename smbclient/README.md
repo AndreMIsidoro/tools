@@ -13,3 +13,12 @@ List shares with no passord or user:
 Connect to a share with a username:
 
     smbclient -U <username> \\\\<smb_server_ip>\\<share_name>
+
+Download entire dir:
+
+```shell
+recurse ON
+prompt OFF
+cd 'path\to\remote\dir'
+mget *
+```
