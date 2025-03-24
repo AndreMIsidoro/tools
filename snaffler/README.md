@@ -15,7 +15,11 @@ Snaffler is a tool for pentesters and red teamers to help find delicious candy n
 
 ## Usage
 
-    snaffler.exe -s -d <domain_name> -o snaffler.log -v data
+```shell
+snaffler.exe -s -d <domain_name> -o snaffler.log -v data
+#example
+Snaffler.exe -s -d inlanefreight.local -o snaffler.log -v data
+```
 
 
 ## More Information
