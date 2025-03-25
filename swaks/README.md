@@ -8,4 +8,4 @@
 
 Send a mail with an attachement
 
-    swaks -s <mail_server_ip> -f <user.email> -t <receiver.email> --attach <file_to_attach>
+    swaks -s <mail_server_ip> -f <user.email> -t <receiver.email> --attach @<filename_to_attach>
