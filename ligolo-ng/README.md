@@ -190,6 +190,15 @@ When using nmap, you should use --unprivileged or -PE to avoid false positives.
 nmap -Pn -oN dc01_nmap.out --unprivileged DC01.INLANEFREIGHT.LOCAL
 
 nmap -Pn -oN dc01_nmap.out --unprivileged -iL live_hosts
+```
+
+
+Creating proxy with certficate
+
+```shell
+openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -days 365 -nodes
+./proxy -certfile cert.pem -keyfile=key.pem -laddr 0.0.0.0:8888
+```
 
 
 ## More Information
