@@ -11,10 +11,10 @@ XMLStarlet is a command-line toolkit that provides a set of utilities for proces
 
 ## Options
 
-    -fo: formats xml
+    fo: formats xml
 
 ## Usage
 
 Beautify xml
 
-    cat <ugly_xml>| xmlstarlet -fo
+    cat <ugly_xml>| xmlstarlet fo
