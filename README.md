@@ -1,14 +1,22 @@
-# List Of Utilities for Escalation
+# List Of Utilities for Escalatio
 
-## Blockchain
+## Tips
+
+To install packages that wont be necessary after, we can use docker:
+
+```shell
+docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" debian:bookworm-slim bash
+```
+
+### Blockchain
 
 	foundry: toolkit for |Ethereum application development.
 
-## Cheatsheets
+### Cheatsheets
 
 	https://github.com/puzzithinker/cybersecurity_cheatsheets
 
-## Credentials/Passwords Hunting
+### Credentials/Passwords Hunting
 
 	default-credentials - Database with defaults credentials of main vendors
 
@@ -25,11 +33,11 @@
 
 	trufflehog - hunts for credentials in Git, Jira, Slack, Confluence, Microsoft Teams, Sharepoint files/dirs
 
-## Cryptography
+### Cryptography
 
 	RSACTFTools
 
-## Debugging and Reverse Engineering
+### Debugging and Reverse Engineering
 
 	ghidra : ELF files
 	immunity debugger : .exe files
@@ -40,13 +48,13 @@
 
 	https://github.com/xiosec/Reverse-engineering
 
-## DNS
+### DNS
 
 	nslooup -  is a command-line tool used to query Domain Name System (DNS) servers to obtain domain name or IP address mapping information.
 	dnsrecon - tool used for dns enumeration
 	dig - query dns information
 
-## Exploits and Vulnerabilities
+### Exploits and Vulnerabilities
 
 	metasploit
 	Evil-WinRM: This shell is the ultimate WinRM shell for hacking/pentesting.
@@ -54,31 +62,31 @@
 	xssstrike : Identifies xss vulnerabilities
 	xxe injector: Automation tool for xxe vulnerability.
 
-## Firmware
+### Firmware
 
 	binwalk - Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
 
-## Fuzzing and dirbusters
+### Fuzzing and dirbusters
 
 	ffuf
 	gobuster
 	feroxbuster: Feroxbuster is an open-source, fast, and flexible directory and file brute-forcing tool used primarily for web application security testing.
 
-## Hardware
+### Hardware
 
 	saleae - Hardware interface logic analyser
 
-## Host Discovery
+### Host Discovery
 
 	nmap
 	fping
 
-## Information Gathering
+### Information Gathering
 
 	searchsploit : Used to find exploits
 	wappalyzer : Used to find the technolagies used to build a webserver
 
-## Ldap
+### Ldap
 
 	activeDirectory Powershell Module - group of PowerShell cmdlets for administering an Active Directory environment from the command line.
 	adrecon - ADRecon is a tool which extracts and combines various artefacts (as highlighted below) out of an AD environment
@@ -98,63 +106,63 @@
 	Rubeus - Windows - Kerberosting tool
 
 
-## Packets Analyser/Inspector
+### Packets Analyser/Inspector
 
 	snort
 	
-## Password and Hash Cracking
+### Password and Hash Cracking
 
 	JohnTheRipper: is a fast password cracker for offline
 	hydra: passowrd cracker for online login
 	hashcat: hash cracker
 
-## Password Spray
+### Password Spray
 
 	kerbrute - Linux/Windows
 	DomainPasswordSpay - Windows
 
 
-## Payload Generator
+### Payload Generator
 
 	msfvenom
 	msfpayload
 
-## Poisoners
+### Poisoners
 
 	responder: It's IPv6/IPv4 LLMNR/NBT-NS/mDNS Poisoner and NTLMv1/2 Relay.
 	inveigh
 	
-## Port Forwarding and Tunneling
+### Port Forwarding and Tunneling
 
 	Chisel
 	ligolo-ng: An advanced, yet simple, tunneling tool
 
-## PrivEsc
+### PrivEsc
 
 	winPEAS: Script for windows priv esc
 
-## Pwn Challenges
+### Pwn Challenges
 
 	pwntools	-	A python package with a command line interface with a lot of useful tools for ctf challenges
 
-## Remote Desktop Protocol
+### Remote Desktop Protocol
 
 	xfreerdp
 
-## SMB
+### SMB
 
 	smbclient - command-line tool that allows you to access shared files and printers over the Server Message Block (SMB) protocol
 
-## SMTP - Mail
+### SMTP - Mail
 
 	swaks - Swiss Army Knife SMTP, the all-purpose SMTP transaction tester
 
-## SNMP - Simple Network Management Protocol
+### SNMP - Simple Network Management Protocol
 
 	snmpwalk -  a command-line tool used to retrieve a large amount of information from an SNMP-enabled device
 
 
-## Subdomain/Vhost Scans
+### Subdomain/Vhost Scans
 
 	gobuster dns
 	knockpy
@@ -162,18 +170,18 @@
 	dnsrecon
 
 
-## Web Proxies
+### Web Proxies
 
 	ZAP : open source tool to primary use of web proxies is to capture and replay HTTP requests
 	Burp Suite : paid tool (with a free version) to primary use of web proxies is to capture and replay HTTP requests
 	proxychains : routes all traffic coming from any command-line tool to any proxy we specify
 
-## Windows
+### Windows
 
 	Impacket: Network and sql protocols
 	RunasCs: is an utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
 
-## Utilities
+### Utilities
 
 	exiftool: Read and write meta information in files
 	jq: Command line json processor
