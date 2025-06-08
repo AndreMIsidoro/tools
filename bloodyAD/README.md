@@ -48,6 +48,14 @@ Get groups a user belong:
 bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' get membership '[target_user_name]'
 ```
 
+### SET
+
+Change a users password:
+
+```shell
+bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' set password '[target_user_name]' '[new_password]'
+```
+
 ## More Information
 
 https://github.com/CravateRouge/bloodyAD/wiki/User-Guide
