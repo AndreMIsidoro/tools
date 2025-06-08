@@ -40,6 +40,14 @@ Add user to group:
 bloodyAD --host $dc -d $domain -u $username -p $password add groupMember $group_name $member_to_add
 ```
 
+### GET
+
+Get groups a user belong:
+
+```shell
+bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' get membership '[target_user_name]'
+```
+
 ## More Information
 
 https://github.com/CravateRouge/bloodyAD/wiki/User-Guide
