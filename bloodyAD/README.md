@@ -31,6 +31,16 @@ Change Set Password
 
     bloodyAD --host <dc_controller_name> -d "domain_name" --dc-ip <domain_controller_ip> -k set password <username_target> '<new_password>'
 
+
+### ADD
+
+Add user to group:
+
+```shell
+bloodyAD --host $dc -d $domain -u $username -p $password add groupMember $group_name $member_to_add
+```
+
 ## More Information
 
 https://github.com/CravateRouge/bloodyAD/wiki/User-Guide
+https://seriotonctf.github.io/2024/12/01/BloodyAD-Cheatsheet/index.html
