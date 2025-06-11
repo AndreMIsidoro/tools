@@ -56,6 +56,14 @@ Change a users password:
 bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' set password '[target_user_name]' '[new_password]'
 ```
 
+### REMOVE
+
+Enable a disabled account:
+
+```shell
+bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' remove uac '[target_user_name]' -f ACCOUNTDISABLE
+```
+
 ## More Information
 
 https://github.com/CravateRouge/bloodyAD/wiki/User-Guide
