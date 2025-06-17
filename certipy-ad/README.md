@@ -26,7 +26,13 @@ The find command is useful for enumerating AD CS certificate templates, certific
 KRB5CCNAME=$PWD/<victim_username_with_TGT>.ccache certipy-ad find -scheme <scheme> -k -debug -target <target_dns_name> -dc-ip <domain_controller_ip> -vulnerable -stdout
 ```
 
-Example: KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.129.251.172 -vulnerable -stdout
+```shell
+certipy-ad find -vulnerable -u ca_svc@fluffy.htb -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-ip 10.129.193.226 -stdout
+```
+
+```shell
+KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.129.251.172 -vulnerable -stdout
+```
 
 ### Req
 
