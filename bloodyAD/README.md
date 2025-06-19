@@ -48,6 +48,12 @@ Get groups a user belong:
 bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' get membership '[target_user_name]'
 ```
 
+Get ad object:
+
+```shell
+bloodyAD --host haze.htb -d 'haze.tb' -u 'mark.adams' -p 'Ld@p_Auth_Sp1unk@2k24' get object "CN=Haze-IT-Backup,CN=Managed Service Accounts,DC=haze,DC=htb"
+```
+
 ### SET
 
 Change a users password:
