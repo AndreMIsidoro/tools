@@ -62,6 +62,12 @@ Change a users password:
 bloodyAD --host [host_ip] -d [domain_name] -u '[user_name]' -p '[user_password]' set password '[target_user_name]' '[new_password]'
 ```
 
+Change the owner of a group:
+
+```shell
+bloodyAD --host haze.htb -d 'haze.htb' -u 'Haze-IT-Backup$' -p ':4de830d1d58c14e241aff55f82ecdba1' set owner 'support_services' 'Haze-IT-Backup$'
+```
+
 ### REMOVE
 
 Enable a disabled account:
