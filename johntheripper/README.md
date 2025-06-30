@@ -36,6 +36,7 @@ If this fails, try the default bruteforce, with no options and no wordlist:
 	hccap2john 	Converts WPA/WPA2 handshake captures for John
 	office2john 	Converts MS Office documents for John
 	wpa2john 	Converts WPA/WPA2 handshakes for John
+	keepass2john	Converts kdbx for John https://github.com/ivanmrsulja/keepass2john
 
 
 ## Cookbook
