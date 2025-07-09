@@ -8,6 +8,10 @@ To install packages that wont be necessary after, we can use docker:
 docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" debian:bookworm-slim bash
 ```
 
+### ACLs
+
+	writeSPN - targetedkerberoast
+
 ### Blockchain
 
 	foundry: toolkit for |Ethereum application development.
