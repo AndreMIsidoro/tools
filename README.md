@@ -10,6 +10,7 @@ docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" de
 
 ### ACLs
 
+	readGMSAPassword - gmsaDumper
 	writeSPN - targetedkerberoast
 
 ### Blockchain
