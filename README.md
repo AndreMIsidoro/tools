@@ -10,6 +10,7 @@ docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" de
 
 ### ACLs
 
+	genericall - impacket dacledit
 	readGMSAPassword - gmsaDumper
 	writeSPN - targetedkerberoast
 
