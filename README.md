@@ -197,3 +197,4 @@ docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" de
 	jq: Command line json processor
 	xmlstarlet: Command line xml processor. Similar to jq
 	zbarimg: scans image for bar and qr codes and prints any decoded data to stdout
+	BulletPassView: password recovery tool that reveals the passwords stored behind the bullets in the standard password text-box of Windows operating system and Internet Explorer Web browser. 
