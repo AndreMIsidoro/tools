@@ -110,6 +110,7 @@ docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" -p
 	powersploit - Collection of powershell modules
 	rpcclient - Linux - Query domain information
 	Rubeus - Windows - Kerberosting tool
+	Timeroast - Roasts ntp service.
 
 
 ### Packets Analyser/Inspector
