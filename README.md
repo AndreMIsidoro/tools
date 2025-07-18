@@ -5,7 +5,7 @@
 To install packages that wont be necessary after, we can use docker:
 
 ```shell
-docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" debian:bookworm-slim bash
+docker run -it --rm -v "$PWD:/workspace" -v "/usr/share/wordlists:/wordlists" -p 9090:9090 debian:bookworm-slim bash
 ```
 
 ### ACLs
