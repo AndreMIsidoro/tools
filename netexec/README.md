@@ -52,6 +52,14 @@ Test if account exist without kereberos:
 
 	nxc ldap 192.168.1.0/24 -u users.txt -p '' -k
 
+Using TGT:
+
+```shell
+export KRB5CCNAME=~/workspace/tmp/rustkey/rr.parker.ccache
+
+faketime "$(ntpdate -q rustykey.htb | awk '{print $1" "$2}')" netexec ldap rustykey.htb -k -u 'rr.parker' -p '8#t5HE8L!W3A'
+```
+
 Test credentials:
 
 	nxc ldap 192.168.1.0/24 -u user -H A29F7623FD11550DEF0192DE9246F46B
