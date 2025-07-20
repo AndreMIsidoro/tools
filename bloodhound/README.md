@@ -43,6 +43,15 @@ bloodhound-python -d <domain_name> -c all -u <username> -p <password> -ns <targe
 bloodhound-ce-python -d haze.htb -c all -u 'Haze-IT-Backup$' --hashes ':4de830d1d58c14e241aff55f82ecdba1' -ns 10.129.127.190 --zip
 ```
 
+We can use Bloodhound with Kerberos Authentication instead of NTLM:
+
+```shell
+faketime "$(ntpdate -q voleur.htb | awk '{print $1" "$2}')"  bloodhound-ce-python -d voleur.htb -k -c all -u 'ryan.naylor' -p 'HollowOct31Nyt' -ns 10.129.68.157 --zip
+```
+This requires that dc.voleur.htb be in /etc/hosts
+
+
+
 If we are in a windows machine, logged in a a user, but with now password, we can download the sharphound.exe and run it in the context of the user
 
     ./sharphound.exe -c all
