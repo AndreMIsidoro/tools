@@ -36,6 +36,7 @@ export KRB5CCNAME=<path_to_ticket>
 Finally edit /etc/krb5.conf with the domain name and the dc name. Example:
 
 ```
+REMOVE THE COMMENTS
 [libdefaults]
     default_realm = RUSTYKEY.HTB # change this
     dns_lookup_realm = false
