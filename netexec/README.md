@@ -41,6 +41,19 @@ Connect to smb server using a file for username and passwords
 	netexec smb nest.htb -u users.txt -p welcome2019 --continue-on-success
 
 
+For smb using a TGT i'm having more success with the too:
+
+```
+impacket-smbclient
+```
+
+
+Download available shares:
+
+```shell
+netexec smb nest.htb -u users.txt -p welcome2019 -M spider_plus -o DOWNLOAD_FLAG=True
+```
+
 ### Modules
 
 	-M spider_plus - creates a json file with the file tree of the shares
@@ -52,7 +65,7 @@ Test if account exist without kereberos:
 
 	nxc ldap 192.168.1.0/24 -u users.txt -p '' -k
 
-Using TGT:
+Using TGT (it may require to add dc.rustykey.htb to /etc/hosts and use it):
 
 ```shell
 export KRB5CCNAME=~/workspace/tmp/rustkey/rr.parker.ccache
