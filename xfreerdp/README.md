@@ -6,7 +6,7 @@ xfreerdp is an X11 Remote Desktop Protocol (RDP) client which is part of the Fre
 
 ## Installation
 
-	sudo apt-get install freerdp2-x11
+	sudo apt-get install freerdp3-x11
 
 ## Command Options
 
@@ -33,3 +33,26 @@ xfreerdp /v:127.0.0.1:13389 /u:hporter /p:Gr8hambino! /drive:home,"/home/tester/
 ```
 
 
+## Use xfreerdp inside docker container
+
+First allow connections to X server:
+
+```shell
+xhost +local:docker
+```
+
+Run container:
+```shell
+docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix ubuntu:22.04 /bin/bash
+```
+Then install xfreerdp2 (or 3):
+
+```shell
+apt update
+apt install -y freerdp2-x11
+```
+Finally connect to server:
+
+```shell
+xfreerdp /v:10.129.234.51 /dynamic-resolution +clipboard -sec-nla
+```
