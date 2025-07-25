@@ -62,6 +62,9 @@ Dump hashes from ntds.dit file, sam.sav and system.sav:
 ```shell
 impacket-secretsdump -outputfile ntds_hashes -ntds ntds.dit -sam SAM.SAV -system SYSTEM.SAV local
 ```
+```shell
+impacket-secretsdump -outputfile ntds_hashes -ntds ntds.dit -system SYSTEM local
+```
 
 ## Permissions Required
 

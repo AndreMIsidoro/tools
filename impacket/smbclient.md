@@ -4,6 +4,12 @@
 
 ## Usage
 
+Show shares:
+
+```shell
+shares
+```
+
 Connect to smb using a TGT:
 
 ```shell
