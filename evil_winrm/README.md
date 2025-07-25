@@ -47,6 +47,12 @@ evil-winrm -i <ip_to_remote_machine> -u 'username' -p 'password'
 
 evil-winrm -i <ip_to_remote_machine> -u 'username' -H 'hash'
 
+Usage with TGT:
+
+```shell
+faketime "$(ntpdate -q voleur.htb | awk '{print $1" "$2}')" evil-winrm -r voleur.htb -i dc.voleur.htb
+```
+
 
 Upload and download a file
 
