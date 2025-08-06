@@ -48,11 +48,13 @@ REMOVE THE COMMENTS
 [realms]
     RUSTYKEY.HTB = { # change this
         kdc = 10.129.232.127 # change this
+        admin_server = dc01.RUSTYKEY.HTB
+        default_domain = RUSTYKEY.HTB
     }
 
 [domain_realm]
-    .example.com = RUSTYKEY.HTB #change this
-    example.com = RUSTYKEY.HTB #change this
+    .MIRAGE.HTB = RUSTYKEY.HTB #change this
+    MIRAGE.HTB = RUSTYKEY.HTB #change this
 ```
 
 Connect by doing:
